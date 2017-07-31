@@ -373,96 +373,96 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-// retrieve assets
-gulp.task('assets', function() {
+// // retrieve assets
+// gulp.task('assets', function() {
 
-  deleteFolderRecursive(assetsFolder);
+//   deleteFolderRecursive(assetsFolder);
 
-  var optionsBtc = {
-    urls: listBtc,
-    directory: './assets/btc/',
-    filenameGenerator: 'bySiteStructure'
-  };
+//   var optionsBtc = {
+//     urls: listBtc,
+//     directory: './assets/btc/',
+//     filenameGenerator: 'bySiteStructure'
+//   };
 
-  var optionsBtb = {
-    urls: listBtb,
-    directory: './assets/btb/',
-    // filenameGenerator: 'bySiteStructure',
-    filenameGenerator: 'byType',
-    recursive: false,
-    subdirectories: [{
-      directory: 'assets_img',
-      extensions: ['.jpg', '.png', '.svg', '.gif', '.ico']
-    },
-    {
-      directory: 'assets_js',
-      extensions: ['.js']
-    },
-    {
-      directory: 'assets_fonts',
-      extensions: ['.woff', '.ttf', '.eot']
-    },
-    {
-      directory: 'assets_css',
-      extensions: ['.css']
-    }
-    ],
-    prettifyUrls: true
-  };
+//   var optionsBtb = {
+//     urls: listBtb,
+//     directory: './assets/btb/',
+//     // filenameGenerator: 'bySiteStructure',
+//     filenameGenerator: 'byType',
+//     recursive: false,
+//     subdirectories: [{
+//       directory: 'assets_img',
+//       extensions: ['.jpg', '.png', '.svg', '.gif', '.ico']
+//     },
+//     {
+//       directory: 'assets_js',
+//       extensions: ['.js']
+//     },
+//     {
+//       directory: 'assets_fonts',
+//       extensions: ['.woff', '.ttf', '.eot']
+//     },
+//     {
+//       directory: 'assets_css',
+//       extensions: ['.css']
+//     }
+//     ],
+//     prettifyUrls: true
+//   };
 
-  console.log(' \ndownloading assets from \n' + root + ' \n');
-  var bar = new ProgressBar('downloading assets :bar', {
-    total: 250
-  });
-  var timer = setInterval(function() {
+//   console.log(' \ndownloading assets from \n' + root + ' \n');
+//   var bar = new ProgressBar('downloading assets :bar', {
+//     total: 250
+//   });
+//   var timer = setInterval(function() {
 
-    bar.tick();
+//     bar.tick();
 
-  }, 750);
+//   }, 750);
 
-  var btbDone = false;
-  var btcDone = false;
-  var resetBar = function() {
-    if (btbDone && btcDone) {
-      clearInterval(timer);
-      console.log('done!');
-    } else {
-      return;
-    }
-  };
+//   var btbDone = false;
+//   var btcDone = false;
+//   var resetBar = function() {
+//     if (btbDone && btcDone) {
+//       clearInterval(timer);
+//       console.log('done!');
+//     } else {
+//       return;
+//     }
+//   };
 
-  scraper(optionsBtb, function(error, result) {
+//   scraper(optionsBtb, function(error, result) {
 
-    console.log(error);
+//     console.log(error);
 
-    gulp.src('./assets/btb/b2b4_static_footer.html')
-      .pipe($.rename('/fr/b2b4/ssi/static/b2b4_static_footer.sec'))
-      .pipe(gulp.dest('./assets/btb'));
+//     gulp.src('./assets/btb/b2b4_static_footer.html')
+//       .pipe($.rename('/fr/b2b4/ssi/static/b2b4_static_footer.sec'))
+//       .pipe(gulp.dest('./assets/btb'));
 
-    gulp.src('./assets/btb/b2b4_static_head.html')
-      .pipe($.rename('/fr/b2b4/ssi/static/b2b4_static_head.sec'))
-      .pipe(gulp.dest('./assets/btb'));
+//     gulp.src('./assets/btb/b2b4_static_head.html')
+//       .pipe($.rename('/fr/b2b4/ssi/static/b2b4_static_head.sec'))
+//       .pipe(gulp.dest('./assets/btb'));
 
-    gulp.src('./assets/btb/b2b4_static_header.html')
-      .pipe($.rename('/fr/b2b4/ssi/static/b2b4_static_header.sec'))
-      .pipe(gulp.dest('./assets/btb'));
+//     gulp.src('./assets/btb/b2b4_static_header.html')
+//       .pipe($.rename('/fr/b2b4/ssi/static/b2b4_static_header.sec'))
+//       .pipe(gulp.dest('./assets/btb'));
 
-    // console.log('btb done!');
-    btbDone = true;
-    resetBar();
+//     // console.log('btb done!');
+//     btbDone = true;
+//     resetBar();
 
-  });
+//   });
 
-  scraper(optionsBtc, function(error, result) {
+//   scraper(optionsBtc, function(error, result) {
 
-    console.log(error);
-    // console.log('btc done!');
-    btcDone = true;
-    resetBar();
+//     console.log(error);
+//     // console.log('btc done!');
+//     btcDone = true;
+//     resetBar();
 
-  });
+//   });
 
-});
+// });
 
 gulp.task('tar', function() {
 

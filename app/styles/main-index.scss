@@ -1,9 +1,39 @@
-.index {
-    background: red;
-}
+body{
+    width:100%;
+    margin:0;
+    padding:0;
+    height:100vh;
+    background-color:red;
+    overflow: hidden;
 
-.test_css_background {
-    width: 300px;
-    height: 300px;
-    background-image: url('/images/gear-360_access_01.gif');
+    header{
+        text-align: center;
+        background-color: #dedede;
+        color:#000;
+        height:10vh;
+        border-bottom: 1px solid #000;
+    }
+
+    #app{
+        background-color:green;
+        height:80vh;
+        #menu{
+            width:25%;
+            height:100%;
+            float:left;
+            background-color:red;
+        }
+        #main-content{
+            width:75%;
+            float:left;
+        }
+    }
+
+    footer{
+        background-color: #dedede;
+        color:#000;
+        height:10vh;
+        border-top: 1px solid #000;
+        text-align: center;
+    }
 }
