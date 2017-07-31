@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+.nav{z-index:1020}
+.nav .navbutton .icon-list:before{content:"\2b"}
+html.ltr .nav .icon-cart{text-indent:-3px}
+html,body{background:#f5f5f5}
+html .global_header:after{display:block;clear:both;content:""}
+html.ltr .global_header{position:static;width:100%}
+html.ltr .global_header div[role=status]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;text-align:center;position:relative;color:#cacaca;padding:.5em 2em;padding:10px 32px}
+html.ltr .global_header div[role=status] a{display:block;color:#fff}
+html.ltr .global_header div[role=status] .closer .close{cursor:pointer;top:0;padding:.5em;padding:10px;position:absolute;right:.5em;right:10px}
+html.ltr .global_header div[role=status].cookie_notice{display:none;background:#52565a;z-index:10}
+html.ltr .global_header div[role=status].browser_notice{display:none;background:#00afef;z-index:10;color:#fff!important}
+html.ltr .global_header div[role=status].accNav{padding:0;margin:0}
+html.ltr .global_header div[role=status].accNav p{margin-bottom:0}
+html.ltr .global_header div[role=status].accNav a{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:absolute;left:0;top:0;display:block;overflow:hidden;width:1px;height:1px;margin-bottom:-1px;text-align:center;background:#000;font-weight:700}
+html.ltr .global_header div[role=status].accNav a{margin-left:-1px}
+html.ltr .global_header div[role=status].accNav a:focus{width:100%;position:relative;margin:0;padding:.5em;padding:10px;height:auto}
+html.ltr body.cookiewarning .global_header div[role=status].cookie_notice{display:block}
+html.ltr body.browserwarning .global_header div[role=status].browser_notice{display:block}
+html.ltr .nav{position:relative;height:80px;background-color:#1428A0; }
+
+html.ltr .nav h1{position:absolute;left:0;top:30px;font-size:1px; color:#1428A0; }
+html.ltr .nav h1 a{margin:15px 20px;width:140px;height:21px}
+html.ltr .nav h1 a img{height:100%}
+
+/* logo h1 태그 제거 할 경우 */
+html.ltr .nav .samsung_logo {position:absolute;left:0;top:30px; display:block; margin:15px 20px;width:140px;height:21px}
+html.ltr .nav .samsung_logo img{height:100%}
+
+html.ltr .nav nav .utillink{position:relative;z-index:1021;padding:0 20px;width:auto;height:30px;font-size:12px;text-align:right;background:#f5f5f5}
+html.ltr .nav nav .utillink a{display:inline;margin:0 0 0 10px;line-height:30px;color:#0057a4;font-family:Arial,sans-serif!important;white-space:nowrap}
+/* POV B2C design 20150205 */
+html.ltr .nav nav .utillink a:hover {color:#000; text-decoration:none; }
+
+html.ltr .nav nav .utillink .expand>a:after{position:absolute;padding-left:5px;font-size:10px;line-height:30px;font-family:"samsungIcon";content:"\30"}
+html.ltr .nav nav .utillink .expand{position:relative;display:inline-block;padding-right:25px}
+html.ltr .nav nav .utillink .expand ul{display:none;position:absolute;width:100%}
+html.ltr .nav nav .utillink .expand ul.on{display:block}
+html.ltr .nav nav .utillink .expand ul li{margin:0 0 -1px 0;padding:3px 10px;text-align:left;border:1px solid #c1c1c1;background:#e1e1e1}
+html.ltr .nav nav .utillink .expand ul li a{margin:0;font-size:12px;line-height:18px}
+html.ltr .nav nav .navigation{position:absolute;left:190px;top:30px;z-index:1021}
+html.ltr .nav nav .navigation li{position:static;z-index:1;float:left;line-height:50px}
+html.ltr .nav nav .navigation li .icon-estore{position:relative;top:5px;left:-2px;font-size:24px;font-size:1.5rem}
+html.ltr .nav nav .navigation li a{display:block;margin:0 10px 0 0;padding:0 0 0 10px;font-size:15px;color:#fff;font-family:"SamsungIFRg"}
+html.ltr .nav nav .navigation li.sub>a{padding:0 20px 0 10px}
+html.ltr .nav nav .navigation li>a:after{position:absolute;padding-left:5px;font-size:8px;line-height:50px;font-family:"samsungIcon";content:" ";z-index:0}
+html.ltr .nav nav .navigation li.on{background:#b8d8ee}
+html.ltr .nav nav .navigation li.on a{color:#343434;  }
+
+.nav nav .navigation li.checkIn{background:none}
+@media (min-width: 64em) {.nav nav .navigation li.checkIn{background:#404040}}
+html.ltr .nav nav .navigation li.sub>a:after{content:"\30"}
+html.ltr .nav nav .navigation li ul{display:none;position:absolute;top:50px;z-index:1;width:250px;min-height:100%;border-bottom:1px solid #e1e1e1;background:#fff}
+html.ltr .nav nav .navigation li.on>ul{display:block}
+html.ltr .nav nav .navigation li ul li{float:none;border-top:1px solid #e1e1e1}
+html.ltr .nav nav .navigation li ul li:first-child{border-top:none}
+html.ltr .nav nav .navigation li ul li a{margin:0;padding:15px 50px 15px 15px;color:#000;line-height:120%;background:#f5f5f5}
+html.ltr .nav nav .navigation li ul li>a:after{display:inline-block;position:absolute;right:20px;padding-left:5px;font-size:10px;line-height:18px;font-family:"samsungIcon";content:" "}
+html.ltr .nav nav .navigation li ul li.sub>a{padding:15px 50px 15px 15px}
+html.ltr .nav nav .navigation li ul li.sub.on>a{padding:15px 50px 15px 14px}
+html.ltr .nav nav .navigation li ul li.sub>a:after{content:"\e03f"}
+html.ltr .nav nav .navigation li ul li.sub.on>a:after{content:" ";padding-left:15px}
+html.ltr .nav nav .navigation li ul li.on>a{position:relative;z-index:2;padding:15px 51px 15px 14px;width:233px;color:#000;background:#fff;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9}
+html.ltr .nav nav .navigation li ul li.sub.on>a{width:185px;border-right:1px solid #fff}
+html.ltr .nav nav .navigation li ul li ul{display:none;position:absolute;left:249px;top:0;padding-top:0;border:1px solid #e1e1e1;border-top:none}
+html.ltr .nav nav .navigation li ul li ul li{border:none}
+html.ltr .nav nav .navigation li ul li ul li:first-child{margin-top:10px}
+html.ltr .nav nav .navigation li ul li ul li a{position:relative;z-index:2;margin:0 0 1px 2px;padding:7px 20px 8px 20px;border-left:none;background:#fff}
+html.ltr .nav nav .navigation li ul li ul li>a:after{position:absolute;right:20px;padding-left:5px;font-size:18px;line-height:18px;font-family:"samsungIcon";content:" "}
+html.ltr .nav nav .navigation li ul li ul li a:hover{color:#0057a4;text-decoration:underline}
+html.ltr .nav nav .navigation li ul li ul li.on a{padding:0 20px 15px 20px;width:auto;border:none}
+html.ltr .nav nav .navigation li ul li ul li ul{display:none;position:relative;left:-1px;top:0;margin-bottom:-1px}
+
+/* BEGIN: exception */
+html.ltr .nav nav .navigation li ul li.exception{float:none;border-top:1px solid #e1e1e1}
+html.ltr .nav nav .navigation li ul li.exception:first-child{border-top:none}
+html.ltr .nav nav .navigation li ul li.exception a{margin:0;padding:15px 50px 15px 15px;color:#000;line-height:120%;background:#f5f5f5}
+html.ltr .nav nav .navigation li ul li.exception>a:after{position:absolute;right:20px;padding-left:5px;font-size:18px;line-height:18px;font-family:"samsungIcon";content:" "}
+html.ltr .nav nav .navigation li ul li.sub.exception>a{padding:15px 50px 15px 15px;color:#0057a4}
+html.ltr .nav nav .navigation li ul li.sub.exception>a:after{content:"\e03f";font-size:10px}
+html.ltr .nav nav .navigation li ul li.sub.on.exception>a:after{content:" ";padding-left:15px;right:19px}
+html.ltr .nav nav .navigation li ul li.sub.on.exception>a{position:relative;z-index:2;padding:15px 51px 15px 14px;width:233px;color:#000;background:#fff;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9}
+html.ltr .nav nav .navigation li ul li.sub.on.exception>a{padding:15px 50px 15px 14px;width:184px;border-right:1px solid #e9e9e9;color:#0057a4}
+html.ltr .nav nav .navigation li ul li.exception ul{display:block;position:static;left:0;top:0;width:250px;border:none;border-top:1px solid #f5f5f5;background:#f5f5f5}
+html.ltr .nav nav .navigation li ul li.sub.on.exception ul{width:248px;border:1px solid #e1e1e1;border-bottom:none;border-top:1px solid #fff;background:#fff}
+html.ltr .nav nav .navigation li ul li.exception ul li{border:none}
+html.ltr .nav nav .navigation li ul li.exception ul li:first-child{margin-top:10px}
+html.ltr .nav nav .navigation li ul li.exception ul li a{padding:10px 10px 10px 30px;border-left:none;background:#f5f5f5;border-right:1px solid #e1e1e1;border-top:1px solid transparent;border-bottom:1px solid transparent}
+html.ltr .nav nav .navigation li ul li.exception ul li>a:after{position:absolute;right:20px;padding-left:5px;font-size:18px;line-height:18px;font-family:"samsungIcon";content:" "}
+html.ltr .nav nav .navigation li ul li.exception ul li.on a:after{content:" "}
+html.ltr .nav nav .navigation li ul li.exception ul li a:hover{color:#0057a4;text-decoration:underline;content:" "}
+html.ltr .nav nav .navigation li ul li.sub.on.exception ul li a{padding:10px 10px 10px 29px;background:#fff;border-right:none;border-top:1px solid transparent;border-bottom:1px solid transparent}
+html.ltr .nav nav .navigation li ul li.sub.on.exception ul li.on>a{margin:0;padding:10px 12px 10px 29px;width:207px;border-top:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;border-right:1px solid #fff}
+html.ltr .nav nav .navigation li ul li.sub.on.exception ul li.on.last-item>a{border-bottom:1px solid #fff}
+html.ltr .nav nav .navigation li ul li.exception ul li:first-child{margin-top:0}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul{display:none;position:absolute;left:249px;top:0;margin-bottom:0;padding-top:0;width:250px;border:1px solid #e1e1e1;border-top:none}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li{border:none}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li:first-child{margin-top:10px}
+html.ltr .nav nav .navigation li ul li.sub.on.exception ul li ul li a{padding:0 10px 15px 29px}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li a{padding:0 20px 15px 20px;background:#fff}
+html.ltr .nav nav .navigation li ul li.sub.on.exception ul li.on ul li.on>a{margin:0;padding:0 12px 15px 29px;border:none}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li>a:after{position:absolute;right:20px;padding-left:5px;font-size:18px;line-height:18px;font-family:"samsungIcon";content:" "}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li a:hover{color:#0057a4;text-decoration:underline}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li.on a{border:none}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li ul{display:none;position:relative;left:-1px;top:0;margin-bottom:-1px}
+html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li.on ul{display:block}
+html.ltr .nav nav .navigation li ul li.sub.on.exception ul li.on ul{display:block;border-top:none}
+html.ltr .nav nav .navigation li ul li.sub.on.exception ul li ul{border-bottom:1px solid #e1e1e1}
+/* END: exception */
+
+html.ltr .nav .navbutton{display:none;width:41px;height:50px;float:left;font-size:0;text-align:center;line-height:11px;color:#fff;text-transform:uppercase;letter-spacing:-1px;overflow:hidden}
+html.ltr .nav .navbutton.on{color:#000;background:#fff}
+html.ltr .nav .navbutton:hover{color:#d0d0d0}
+html.ltr .nav .navbutton button{width:41px;height:50px}
+html.ltr .nav .container{float:right}
+html.ltr .nav .otherlink{float:left;text-transform:uppercase;overflow:hidden}
+html.ltr .nav .search-wrap{position:static;float:left}
+html.ltr .nav .searchbutton{display:none;width:41px;height:50px;float:left;font-size:0;text-align:center;line-height:11px;color:#fff;text-transform:uppercase;letter-spacing:-1px;overflow:hidden}
+html.ltr .nav .searchbutton:hover{color:#d0d0d0}
+html.ltr .nav .searchbutton.on{color:#fff;background:#5a5a5a}
+html.ltr .nav .searchbutton button{width:41px;height:50px}
+html.ltr .searchbox{display:block;position:relative;top:0;left:0;z-index:1020;float:left;width:auto;margin-top:10px;margin-right:20px;padding:0;background:none}
+html.ltr .searchbox label{display:none}
+html.ltr .searchbox input{float:left;padding:0 10px;border:none;height:30px;width:265px;-webkit-appearance:none;border-radius:0}
+html.ltr .searchbox button{display:inline-block;width:30px;height:30px;overflow:hidden;background:#fff!important}
+html.ltr .searchbox button span{line-height:30px}
+html.ltr .nav .signbutton{display:block;width:41px;height:50px;float:left;font-size:0;text-align:center;line-height:11px;color:#fff;text-transform:uppercase;letter-spacing:0;overflow:hidden;font-family:"SamsungIFRg"}
+html.ltr .nav .signbutton:hover{color:#d0d0d0}
+html.ltr .nav .signbutton button{width:41px;height:50px}
+html.ltr .ss_samsung .nav div.auto-complete{display:none;top:30px;margin:0;padding:0;width:100%;height:auto;border:none;background:none}
+html.ltr .ss_samsung .nav div.auto-complete div{display:block}
+html.ltr .ss_samsung .nav div.auto-complete li a{font-family:"SamsungIFRg"}
+html.ltr .ss_samsung .nav div.auto-complete .auto-complete-wrap{display:block;margin:0 0 10px 0;padding:15px 15px;border:none;border:1px solid #ececec;background:#fff}
+html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list{display:none;opacity:1;max-height:none;margin:1px 0 0 0;padding:10px 0 15px 0;background:#fff;border:1px solid #eaeaea}
+html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li{margin:0}
+html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li a{padding:5px 10px;font-size:16px}
+html.ltr .ss_samsung .nav div.auto-complete.search-form-ac.on.results-returned{border:none}
+html.ltr .nav .cart-wrap{float:left;overflow:hidden;margin-right:20px}
+html.ltr .nav .otherlink>a,html.ltr .nav .cart-wrap>button{position:relative;display:block;float:left;width:41px;height:50px;font-size:0;color:#fff;text-align:center;line-height:11px;text-transform:uppercase;letter-spacing:0;overflow:hidden;font-family:"SamsungIFRg"}
+html.ltr .nav .cart-wrap.on .cartbutton{color:#fff;background:#5a5a5a}
+html.ltr .nav .otherlink>a:hover,html.ltr .nav .cart-wrap>button:hover{color:#d0d0d0}
+html.ltr .nav .icon-signin,html.ltr .nav .icon-signout,html.ltr .nav .icon-list,html.ltr .nav .icon-save,html.ltr .nav .icon-cart{display:block;width:auto;font-size:16px;line-height:50px}
+html.ltr .nav .icon-search{line-height:25px}
+html.ltr .nav .icon-localization-store{margin-right:2px;font-size:16px;line-height:16px;vertical-align:middle}
+
+/* minicart ltr : start */
+html.ltr .cart-wrap{font-family:"SamsungIFRg"}
+html.ltr .cart-wrap .cart-list-wrap{display:none;position:absolute;z-index:1020;right:0;top:80px;width:340px;height:auto;padding:0;border-left:1px solid #e5e5e5;background:#fff;cursor:default}
+html.ltr .cart-wrap .cart-list-wrap h3{padding:20px;font-size:20px;color:#fff;background:#5a5a5a}
+html.ltr .cart-wrap .cart-list-wrap .cart-close{position:absolute;right:18px;top:20px;color:#fff; font-size:28px; }
+html.ltr .cart-wrap.on .cart-list-wrap{display:block}
+html.ltr .cart-wrap.on .cart-list-wrap .cart-list{max-height:528px;overflow:hidden;overflow-y:scroll}
+html.ltr .cart-wrap .cart-products{overflow:hidden;*zoom:1;background:#fff;display:table;padding:20px 0;position:relative;height:auto;color:#292929;width:100%;border-bottom:1px solid #f1f1f1}
+html.ltr .cart-wrap .cart-products .product-image{width:35%}
+html.ltr .cart-wrap .cart-products .product-btn{width:6%}
+html.ltr .cart-wrap .cart-products .product-desc{width:59%}
+html.ltr .cart-wrap .cart-products .product-image img{margin-left:0}
+html.ltr .cart-wrap .cart-products .vertical-align-content{display:table-cell;vertical-align:middle;background:#fff}
+html.ltr .cart-wrap .cart-products .vertical-align-top{display:table-cell;vertical-align:top}
+html.ltr .cart-wrap .cart-products .product-btn{display:table-cell}
+html.ltr .cart-wrap .cart-products .icon-close-x{margin-left:-10px;color:#0071bf;padding:0;border:0}
+html.ltr .cart-wrap .cart-products .icon-close-x:hover{background:none}
+html.ltr .cart-wrap .cart-products .product-image{display:table-cell;text-align:center}
+html.ltr .cart-wrap .cart-products .product-desc{display:table-cell;line-height:1;white-space:normal}
+html.ltr .cart-wrap .cart-products .colour-selection{display:block;padding:0 0 5px;border-bottom:none;border-top:none;font-size:1rem;font-size:16px}
+html.ltr .cart-wrap .cart-products .product-desc .product-title{padding-right:10px;display:table-cell}
+html.ltr .cart-wrap .cart-products .product-desc .product-title a{padding:0;border:0}
+html.ltr .cart-wrap .cart-products .product-desc .product-title a{padding:0;border:0}
+html.ltr .cart-wrap .cart-products .product-desc .product-title .product-title-label{display:block;overflow:hidden;min-height:34px;width:100%;white-space:pre-wrap;word-break:break-word;font-weight:700}
+html.ltr .cart-wrap .cart-products .product-desc .product-title .product-title-code{display:block;margin-top:5px;margin-bottom:5px;font-size:.75rem;font-size:12px}
+html.ltr .cart-wrap .cart-products .colour-selection{overflow:hidden;padding-top:5px}
+html.ltr .cart-wrap .cart-products .colour-selection span{float:left;vertical-align:middle;font-size:14px}
+html.ltr .cart-wrap .cart-products .colour-selection ul{display:table-cell;overflow:hidden;*zoom:1;vertical-align:middle;float:right}
+html.ltr .cart-wrap .cart-products .colour-selection ul li .colour-box{display:inline-block;float:left;width:14px;height:14px;margin-right:6px}
+html.ltr .cart-wrap .cart-products .product-quantity{overflow:hidden;display:block;padding-top:5px}
+html.ltr .cart-wrap .cart-products .product-quantity span{float:left;margin-right:10px;font-size:.9rem;font-size:14px;vertical-align:middle}
+html.ltr .cart-wrap .cart-products .product-quantity span.product-quantity-label{float:right;margin-right:10px;font-size:.9rem;font-size:14px;vertical-align:middle;color:#0071bf}
+html.ltr .cart-wrap .cart-products .product-price{overflow:hidden;padding-top:4px;width:100%;display:block}
+html.ltr .cart-wrap .cart-products .product-price span{float:left;line-height:30px;font-size:14px}
+html.ltr .cart-wrap .cart-products .product-price span+span{float:right;vertical-align:middle;color:#0071bf;letter-spacing:0;font-size:26px}
+html.ltr .cart-wrap .total{overflow:hidden;padding:16px 16px 26px;color:#292929;background:#5a5a5a}
+html.ltr .cart-wrap .total .btn{float:left;overflow:hidden;height:38px;width:100%}
+html.ltr .cart-wrap .total .price{overflow:hidden;margin:0 0 26px;color:#fff}
+html.ltr .cart-wrap .total .price strong{float:left;padding:0;text-transform:none;font-size:1.45rem;font-size:24px}
+html.ltr .cart-wrap .total .price span{float:right;padding:0;margin:0;display:inline-block;font-weight:700;vertical-align:middle;color:#fff;font-size:1.45rem;font-size:24px;letter-spacing:0}
+html.ltr .cart-wrap .cart-products.no-data{text-align:center;padding:33px 0}
+html.ltr .cart-wrap .cartnum{position:absolute;top:4px;right:2px;padding:1px 0;width:20px;letter-spacing:0;line-height:1.1;background:#de3d04;font-size:11px;font-family:tahoma;color:#fff!important;border-radius:7px;text-align:center}
+html.ltr .ss_samsung .cart-wrap .cart-products .ss-button{position:absolute;display:inline-block;*display:inline;*zoom:1;font-family:"SamsungIFBd",Arial,sans-serif;font-weight:400;color:#fff;line-height:1.2;text-transform:uppercase;text-decoration:none;transition:all .3s ease 0;-moz-transition:all .3s ease 0;-webkit-transition:all .3s ease 0;text-align:center;cursor:pointer;left:50%;top:110px;width:20%;padding:4px;font-size:10px;font-weight:400;margin:0 0 0 -44%}
+/* minicart ltr : end */
+
+html.ltr .footer-navi{clear:both;position:relative;background:#5a5a5a;padding-bottom:10px;overflow:hidden}
+
+html.ltr .footer-navi h2{padding:20px 30px;font-size:24px;color:#fff;font-family:"SamsungIFRg";font-weight:700}
+/* footer heading h2태그 제거 footer-navi-tit 클래스 추가 */
+html.ltr .footer-navi .footer-navi-tit {padding:20px 30px;font-size:24px;color:#fff;font-family:"SamsungIFRg";font-weight:700; margin:0; }
+
+html.ltr .footer-navi .searchbox{position:absolute;right:25px;top:10px;float:none}
+html.ltr .footer-navi .footer-nav-wrap{margin:0 30px 30px 30px}
+html.ltr .footer-navi .footer-nav-wrap h3{margin:0 20px 0 0;display:block;padding:5px 0;font-size:14px;color:#fff;font-family:"SamsungIFRg";font-weight:700}
+html.ltr .footer-navi .footer-nav-wrap h3 a{font-weight:700;color:#fff;cursor:text}
+
+/* footer heading h3태그 제거 footer-nav-tit 클래스 추가 */
+html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit {margin:0 20px 0 0;display:block;padding:5px 0;font-size:14px;color:#fff;font-family:"SamsungIFRg";font-weight:700}
+html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit a { color:#fff;cursor:text; font-weight: 700;}
+
+
+html.ltr .footer-navi .footer-nav-wrap .col-wrap{display:block;width:auto;margin:0 14% 0 0}
+html.ltr .footer-navi .footer-nav-wrap .col-wrap .col{display:block;float:left;width:12.5%;padding-bottom:20px}
+html.ltr .footer-navi .footer-nav-wrap ul{margin:0 15px 0 0}
+html.ltr .footer-navi .footer-nav-wrap ul li a{display:block;padding:3px 0;font-size:14px;color:#d1d1d1;font-weight:400;font-family:"SamsungIFRg"}
+html.ltr .footer-navi .footer-nav-wrap ul li a:hover{color:#eaf4fa}
+html.ltr .footer-navi .footer-nav-wrap .utillink{position:absolute;right:0;top:0;width:15%;height:auto;background:#6c6f73}
+html.ltr .footer-navi .footer-nav-wrap .utillink ul{padding:70px 30px 30px 15px}
+html.ltr .footer-navi .footer-nav-wrap .utillink ul a{color:#fff}
+html.ltr .footer-navi .searchbox-footer{display:block;position:relative;top:0;left:0;width:auto;margin:10px 5px 15px 15px;padding:0;background:none}
+html.ltr .footer-navi .searchbox-footer label{display:none}
+html.ltr .footer-navi .searchbox-footer input{float:left;padding:0 10px;border:none;height:30px;width:65%;-webkit-appearance:none;border-radius:0}
+html.ltr .footer-navi .searchbox-footer input[type=search]{padding:0 10px;-webkit-appearance:none;border-radius:0}
+html.ltr .footer-navi .searchbox-footer button{display:inline-block;width:30px;height:30px;overflow:hidden;background:#fff}
+html.ltr .footer-navi .searchbox-footer button span{line-height:30px}
+
+@media(max-width: 1280px){
+    html.ltr .nav .search-wrap{position:static}
+	html.ltr .nav .searchbutton{display:block}
+	html.ltr .nav .searchbox{display:none;position:absolute;left:0;top:80px;z-index:1020;float:none;width:100%;margin:0;padding:10px 0;background:#5a5a5a}
+	html.ltr .nav .searchbox.searchopen{display:block}
+	html.ltr .nav .searchbox form{margin:0 60px 0 10px}
+	html.ltr .nav .searchbox input{height:30px;padding:0 10px;width:100%}
+	html.ltr .searchbox input[type=search]{padding:0 10px}
+	html.ltr .nav .searchbox button{overflow:hidden;position:absolute;right:10px;top:10px;width:30px;height:30px}
+	html.ltr .nav .searchbox .icon-search{display:block;width:30px;height:30px;line-height:30px}
+	html.ltr .nav .icon-signin,html.ltr .nav .icon-signout,html.ltr .nav .icon-search,html.ltr .nav .icon-list,html.ltr .nav .icon-cart{display:block;width:auto;font-size:18px;line-height:50px}
+	html.ltr .nav .icon-localization-store{margin-right:2px;font-size:16px;line-height:16px;vertical-align:middle}
+	html.ltr .ss_samsung .nav div.auto-complete{display:none;left:0;top:40px;margin:0;padding:0;width:100%;height:auto;border:none}
+	html.ltr .ss_samsung .nav div.auto-complete .auto-complete-wrap{overflow:hidden;margin:0 10px 10px 10px;padding:15px 15px;border:none;border:1px solid #ececec;background:#fff}
+	html.ltr .ss_samsung .nav div.auto-complete div{display:block}
+	html.ltr .ss_samsung .nav div.auto-complete div.popular{float:left;width:48%}
+	html.ltr .ss_samsung .nav div.auto-complete div.recently-viewed{float:right;width:48%;margin:0;padding:0;border:none}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list{display:block;opacity:1;max-height:250px;margin:0 10px;padding:10px 0 15px 0;background:#fff;border:1px solid #eaeaea}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li{margin:0}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li a{padding:5px 10px;font-size:16px}
+	html.ltr .footer-navi{position:relative;background:#5a5a5a}
+	
+	html.ltr .footer-navi h2{padding:20px 30px;font-size:24px;color:#fff;font-family:"SamsungIFRg";font-weight:700}
+	/* footer heading h2태그 제거 footer-navi-tit 클래스 추가 */
+	html.ltr .footer-navi .footer-navi-tit { margin:0; padding:20px 30px; font-size:24px; }
+	
+	html.ltr .footer-navi .searchbox{position:absolute;right:30px;top:10px;float:none}
+	html.ltr .footer-navi .footer-nav-wrap{margin:0 30px 30px 30px}
+
+	html.ltr .footer-navi .footer-nav-wrap h3{display:block;margin:0 10px 0 0;padding:5px 0;font-size:16px;color:#fff;font-family:"SamsungIFRg";font-weight:700}
+	
+	/* footer heading h3태그 제거 footer-nav-tit 클래스 추가 */
+	html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit {display:block;margin:0 10px 0 0;padding:5px 0;font-size:16px;color:#fff;font-family:"SamsungIFRg";font-weight:700}
+
+	html.ltr .footer-navi .footer-nav-wrap .col-wrap{display:block;width:100%}
+	html.ltr .footer-navi .footer-nav-wrap .col-wrap .col{display:block;width:25%;padding-bottom:20px}
+	html.ltr .footer-navi .footer-nav-wrap .col-wrap .col.utillink{width:25%}
+	html.ltr .footer-navi .footer-nav-wrap ul li a{display:block;padding:3px 0;font-size:16px;color:#b9b9b9;font-weight:400;font-family:"SamsungIFRg"}
+	html.ltr .footer-navi .footer-nav-wrap .utillink{position:static;margin:0;padding:0;width:25%;height:auto;background:none;float:right}
+	html.ltr .footer-navi .footer-nav-wrap .utillink ul{margin:0;padding:0}
+	html.ltr .footer-navi .searchbox-footer{margin:10px 5px 15px 0}
+}
+@media(max-width: 1023px){
+    body{overflow-x:hidden}
+	html.ltr .nav .cart-wrap{margin-right:0}
+	.body_wrapper{-webkit-transition:-webkit-transform 500ms ease;-moz-transition:-moz-transform 500ms ease;-o-transition:-o-transform 500ms ease;transition:transform 500ms ease}
+	html.ltr #overlay{left:0}
+	html.ltr .nav{height:50px}
+	html.ltr .nav h1{top:0}
+
+	/* logo h1 태그 제거 할 경우 */
+	html.ltr .nav .samsung_logo {top:0}
+
+	html.ltr .nav nav .utillink{padding:10px 20px;height:auto;text-align:left}
+	html.ltr .nav nav .utillink a{display:block;margin:0;font-size:14px;color:#000;line-height:35px}
+	html.ltr .nav nav{position:absolute;right:0;top:-2000px;z-index:1;width:280px;background:#f5f5f5}
+	html.ltr .nav nav .navigation{position:static;left:0;top:0;border-bottom:1px solid #e1e1e1}
+	html.ltr .nav nav .navigation li{position:relative;z-index:1;float:none;line-height:49px}
+	html.ltr .nav nav .navigation li.on{background:none}
+	html.ltr .nav nav .navigation li a{margin:0;padding:0 20px 0 20px;font-size:16px;color:#000;border-top:1px solid #e1e1e1}
+	html.ltr .nav nav .navigation li.sub>a{padding:0 40px 0 20px}
+	html.ltr .nav nav .navigation li>a:after{right:20px;font-size:10px;line-height:48px}
+	html.ltr .nav nav .navigation li.sub>a:after{content:"\27"!important}
+	html.ltr .nav nav .navigation li.sub.on>a:after{content:"\28"!important}
+	html.ltr .nav nav .navigation li ul{position:static;top:0;margin-bottom:0;width:auto;min-height:auto;border-top:1px solid #e1e1e1;border-bottom:none}
+	html.ltr .nav nav .navigation li.on>ul{display:block}
+	html.ltr .nav nav .navigation li ul li{margin-top:0;border:none;border-top:1px solid #ccc}
+	html.ltr .nav nav .navigation li ul li a{padding:15px 50px 15px 35px;border:none;background:#e9e9e9}
+	html.ltr .nav nav .navigation li ul li>a:after{font-size:10px;line-height:18px}
+	html.ltr .nav nav .navigation li ul li.sub>a{padding:15px 50px 15px 35px;line-height:20px}
+	html.ltr .nav nav .navigation li ul li.sub.on>a{padding:15px 50px 15px 35px;background:#e9e9e9}
+	html.ltr .nav nav .navigation li ul li.on>a{position:relative;z-index:2;padding:15px 51px 15px 14px;width:233px;color:#000;background:#fff;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9}
+	html.ltr .nav nav .navigation li ul li.sub.on>a{width:auto;border:none}
+	html.ltr .nav nav .navigation li ul li ul{display:none;position:static;left:0;top:0;padding-top:0;border:none;border-top:none}
+	html.ltr .nav nav .navigation li ul li ul li:first-child{margin-top:0}
+	html.ltr .nav nav .navigation li ul li ul li a{padding:7px 20px 8px 40px}
+	html.ltr .nav nav .navigation li ul li ul li>a:after{font-size:14px;line-height:18px}
+	html.ltr .nav nav .utillink .expand ul{display:none;position:static;width:100%;padding-bottom:10px}
+	html.ltr .nav nav .utillink .expand ul.on{display:block}
+	html.ltr .nav nav .utillink .expand ul li{margin:0 0 -1px 0;padding:4px 15px;text-align:left;border:none;background:none}
+	html.ltr .nav nav .utillink .expand ul li a{margin:0;font-size:12px;line-height:18px}
+
+	/* BEGIN: exception */
+    html.ltr .nav nav .navigation li ul li.exception{border-top:1px solid #ccc}
+	html.ltr .nav nav .navigation li ul li.sub.exception>a{padding:15px 50px 15px 35px}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception>a{border-left:none;border-right:none}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception>a{padding:15px 50px 15px 35px;width:auto;border-right:none}
+	html.ltr .nav nav .navigation li ul li.exception ul{width:auto;border-top:1px solid #eaeaea}
+	html.ltr .nav nav .navigation li ul li.exception a{background:#e9e9e9}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception>a{background:#e9e9e9;border-bottom:none}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception ul{width:auto;border:none;border-top:1px solid #e9e9e9}
+	html.ltr .nav nav .navigation li ul li.exception ul li a{padding:15px 10px 15px 55px;background:#e9e9e9}
+	html.ltr .nav nav .navigation li ul li.exception ul li>a:after{padding-left:0;content:"\28";font-size:10px;color:#000;left:35px;line-height:20px}
+	html.ltr .nav nav .navigation li ul li.on.exception ul li>a:after{padding-left:0;content:"\28";font-size:10px;color:#000;left:35px;line-height:20px}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception ul li a{padding:15px 10px 15px 55px;background:#e9e9e9}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception ul li.on>a{width:auto;margin:0;padding:15px 10px 15px 55px;border:none}
+	html.ltr .nav nav .navigation li ul li.sub.exception ul li ul{position:static;left:0;border:none}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception ul li ul{border:none}
+	html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li:first-child{margin-top:0}
+	html.ltr .nav nav .navigation li ul li.sub.exception ul li ul li a{padding:7px 10px 8px 65px}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception ul li ul li a{padding:7px 10px 8px 65px}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception ul li.on ul li.on>a{padding:0 12px 15px 40px}
+	html.ltr .nav nav .navigation li ul li.sub.on.exception ul li ul li a{padding:7px 10px 8px 65px;background:#fff}
+	/* END: exception */
+
+    html.ltr .nav .navbutton{display:block;position:relative;z-index:2;width:49px}
+	html.ltr .nav .searchbox{top:50px}
+	html.ltr .nav .icon-localization-store{margin-left:-5px;margin-right:2px;font-size:24px;line-height:24px}
+	html.ltr .navopen .body_wrapper{position:relative;left:0;-webkit-transform:translate(-280px,0);-moz-transform:translate(-280px,0);-ms-transform:translate(-280px,0);-o-transform:translate(-280px,0);transform:translate(-280px,0);-webkit-transition:-webkit-transform 500ms ease;-moz-transition:-moz-transform 500ms ease;-o-transition:-o-transform 500ms ease;transition:transform 500ms ease}
+	html.ltr .navopen .nav nav{-webkit-transform:translate(100%,2050px);-moz-transform:translate(100%,2050px);-ms-transform:translate(100%,2050px);-o-transform:translate(100%,2050px);transform:translate(100%,2050px);-webkit-transition-delay:1ms;transition-delay:1ms;backface-visibility:hidden;-ms-backface-visibility:hidden;-moz-backface-visibility:hidden;-webkit-backface-visibility:hidden;-o-backface-visibility:hidden}
+	html.ltr .navopen #overlay{position:absolute;left:0;top:0;z-index:2147483647;width:100%;height:100%;background:#333;box-shadow:4px 0 10px #999;opacity:.3}
+	html.ltr .nav .searchbutton{display:none}
+	html.ltr .nav .searchbox{display:block;position:relative;top:0;float:left;width:auto;margin-top:10px;margin-right:5px;padding:0;background:none}
+	html.ltr .nav .searchbox form{margin:0 0 0 10px}
+	html.ltr .nav .searchbox input{height:30px;padding:0;width:265px}
+	html.ltr .nav .searchbox input[type=search]{padding:0 10px}
+	html.ltr .nav .searchbox button{display:inline-block;position:static;width:30px;height:30px}
+	html.ltr .nav .searchbox .icon-search{display:block;width:30px;height:30px;line-height:30px}
+	html.ltr .ss_samsung .nav div.auto-complete{display:none;top:30px;margin:0;margin-left:10px;padding-left:0;padding-right:0;width:315px;height:auto;border:none}
+	html.ltr .ss_samsung .nav div.auto-complete .auto-complete-wrap{margin:0}
+	html.ltr .ss_samsung .nav div.auto-complete div{display:block}
+	html.ltr .ss_samsung .nav div.auto-complete div.popular{float:none;width:auto}
+	html.ltr .ss_samsung .nav div.auto-complete div.recently-viewed{float:none;width:auto;margin-top:12px;padding-top:12px;border-top:1px solid #a6a8aa}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list{display:block;opacity:1;max-height:none;margin:1px 0 0 0;padding:10px 0 15px 0;background:#fff;border:1px solid #eaeaea}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li{margin:0}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li a{padding:5px 10px;font-size:16px}
+	html.ltr .cart-wrap .cartnum{position:absolute;top:5px}
+	html.ltr .cart-wrap .cart-list-wrap{top:50px}
+	html.ltr .nav .icon-signin,html.ltr .nav .icon-signout,html.ltr .nav .icon-search,html.ltr .nav .icon-list,html.ltr .nav .icon-cart,html.ltr .nav .icon-save{line-height:50px}
+}
+@media(max-width: 767px){
+    html.ltr .nav .searchbutton{display:block}
+	html.ltr .nav .searchbox{display:none;position:absolute;left:0;top:50px;float:none;width:100%;margin-top:0;margin-right:10px;padding:10px 0;background:#5a5a5a}
+	html.ltr .nav .searchbox.searchopen{display:block}
+	html.ltr .nav .searchbox form{margin:0 60px 0 10px}
+	html.ltr .nav .searchbox input{height:30px;padding:0 10px;width:100%}
+	html.ltr .nav .searchbox input[type=search]{}
+	html.ltr .nav .searchbox button{overflow:hidden;position:absolute;right:10px;top:10px;width:30px;height:30px}
+	html.ltr .nav .searchbox button button span{line-height:30px}
+	html.ltr .ss_samsung .nav div.auto-complete{display:none;left:0;top:40px;margin:0;padding:0;width:100%;height:auto;border:none;background:none}
+	html.ltr .ss_samsung .nav div.auto-complete .auto-complete-wrap{overflow:hidden;margin:0 10px 10px 10px;padding:15px 15px;border:none;border:1px solid #ececec;background:#fff}
+	html.ltr .ss_samsung .nav div.auto-complete div{display:block}
+	html.ltr .ss_samsung .nav div.auto-complete div.popular{float:left;width:48%}
+	html.ltr .ss_samsung .nav div.auto-complete div.recently-viewed{float:right;width:48%;margin:0;padding:0;border:none}
+	html.ltr .ss_samsung .nav div.auto-complete li a{font-size:13px}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list{display:block;opacity:1;max-height:none;margin:0 10px;padding:10px 0 15px 0;background:#fff;border:1px solid #eaeaea;overflow-x:hidden}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li{margin:0}
+	html.ltr .ss_samsung .nav div.auto-complete .autocomplete-list li a{padding:5px 10px;font-size:16px}
+	html.ltr .cart-wrap .cart-list-wrap{width:100%}
+	html.ltr .footer-navi{position:relative;padding:0 0 60px 0;background:#5a5a5a;overflow:hidden}
+	
+	html.ltr .footer-navi h2{padding:20px 25px;font-size:24px;color:#fff;font-family:"SamsungIFRg";font-weight:700}
+	/* footer heading h2태그 제거 footer-navi-tit 클래스 추가 */
+	html.ltr .footer-navi .footer-navi-tit {padding:20px 25px;font-size:24px;color:#fff;font-family:"SamsungIFRg";font-weight:700}
+
+	html.ltr .footer-navi .searchbox-footer{position:absolute;left:0;top:auto;bottom:15px;float:none;width:100%;margin:0}
+	html.ltr .footer-navi .searchbox-footer form{margin:0 75px 0 25px}
+	html.ltr .footer-navi .searchbox-footer input{width:100%}
+	html.ltr .footer-navi .searchbox-footer button{position:absolute;right:25px;top:0}
+	html.ltr .footer-navi .searchbox-footer .searchbox input{width:100%}
+	html.ltr .footer-navi .footer-nav-wrap{margin:0}
+
+	html.ltr .footer-navi .footer-nav-wrap h3{display:block;margin:0;padding:10px 0;font-size:16px;color:#fff;font-family:"SamsungIFRg";font-weight:400;cursor:pointer}
+	html.ltr .footer-navi .footer-nav-wrap h3 a{position:relative;display:block;width:auto;padding-right:20px;cursor:pointer}
+	html.ltr .footer-navi .footer-nav-wrap h3 a:after{position:absolute;right:0;top:0;font-size:13px;font-family:"samsungIcon";content:"\27"!important}
+	html.ltr .footer-navi .footer-nav-wrap h3 a.on:after{content:"\28"!important}
+	
+	/* footer heading h3태그 제거 footer-nav-tit 클래스 추가 */
+	html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit {display:block;margin:0;padding:10px 0;font-size:16px;color:#fff;font-family:"SamsungIFRg";font-weight:400;cursor:pointer}
+	html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit a{ position:relative;display:block;width:auto;padding-right:20px;cursor:pointer }
+	html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit a:after{position:absolute;right:0;top:0;font-size:13px;font-family:"samsungIcon";content:"\27"!important}
+	html.ltr .footer-navi .footer-nav-wrap .footer-nav-tit a.on:after{content:"\28"!important}
+
+
+	html.ltr .footer-navi .footer-nav-wrap .col-wrap{display:block;width:auto;margin:0;border-bottom:1px solid #eaeaea}
+	html.ltr .footer-navi .footer-nav-wrap .col-wrap .col{display:block;float:none;width:auto;padding:0 25px;border-top:1px solid #eaeaea}
+	html.ltr .footer-navi .footer-nav-wrap .col-wrap .col.utillink{width:auto}
+	html.ltr .footer-navi .footer-nav-wrap ul{display:none;padding:0 15px 15px 15px}
+	html.ltr .footer-navi .footer-nav-wrap ul li a{display:block;padding:3px 0;font-size:16px;color:#b9b9b9;font-weight:400;font-family:"SamsungIFRg"}
+	html.ltr .footer-navi .footer-nav-wrap .utillink{display:block;position:static;right:0;top:auto;bottom:0;padding:0;width:auto;height:auto;background:#6c6f73;border-top:1px solid #eaeaea}
+	html.ltr .footer-navi .footer-nav-wrap .utillink ul{display:none;margin:0 0 0 15px;padding:15px 0 15px 0}
+}
+.ss_samsung.category div.auto-complete div.recently-viewed,.ss_samsung.category div.auto-complete div.popular{clear:none!important}
+@media(max-width: 359px) {
+	html.ltr .nav h1 a{width:112px;height:15.9px;margin:17px 20px}
+
+	/* logo h1 태그 제거 할 경우 */
+	html.ltr .nav .samsung_logo {width:112px;height:15.9px;margin:17px 20px}
+}

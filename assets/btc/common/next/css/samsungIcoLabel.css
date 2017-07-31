@@ -1,0 +1,136 @@
+@font-face {
+font-family:"samsungIcoLabel";src:url(../font/samsungIcoLabel.eot);src:url(../font/samsungIcoLabel.eot#iefixbmltcm) format("embedded-opentype"),url(../font/samsungIcoLabel.woff) format("woff"),url(../font/samsungIcoLabel.ttf) format("truetype"),url(../font/samsungIcoLabel.svg#samsungIcoLabel) format("svg");font-weight:normal;font-style:normal
+}
+.iconLabel_A_3,.iconLabel_A_2,.iconLabel_A_1,.iconLabel_A,.iconLabel_B,.iconLabel_C,.iconLabel_D,.iconLabel_E,.iconLabel_F,.iconLabel_G{font-family:"samsungIcoLabel"!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;padding:0 3px;margin:0;background-image:url(data:image/gif;base64,R0lGODlhJQAWAIAAAPX19QAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQzZDNDMwQTY1NjcxMUU0OUQzOUVFOTU4NDMxNzZCMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQzZDNDMwQjY1NjcxMUU0OUQzOUVFOTU4NDMxNzZCMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkRDNkM0MzA4NjU2NzExRTQ5RDM5RUU5NTg0MzE3NkIwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkRDNkM0MzA5NjU2NzExRTQ5RDM5RUU5NTg0MzE3NkIwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAACUAFgAAAhqEj6nL7Q+jnLTai7PevPsPhuJIluaJpupqFgA7);background-repeat:no-repeat;background-size:90% 90%;background-position:0 -1px;/* Better Font Rendering =========== */-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+html.rtl .iconLabel_A_3,html.rtl .iconLabel_A_2,html.rtl .iconLabel_A_1,html.rtl .iconLabel_A,html.rtl .iconLabel_B,html.rtl .iconLabel_C,html.rtl .iconLabel_D,html.rtl .iconLabel_E,html.rtl .iconLabel_F,html.rtl .iconLabel_G{margin:0 0 0 5px}
+.iconLabel_A:before{content:"\e600"}
+.iconLabel_A_1:before{content:"\e601"}
+.iconLabel_A_2:before{content:"\e602"}
+.iconLabel_A_3:before{content:"\e603"}
+.iconLabel_B:before{content:"\e604"}
+.iconLabel_C:before{content:"\e605"}
+.iconLabel_D:before{content:"\e606"}
+.iconLabel_E:before{content:"\e607"}
+.iconLabel_F:before{content:"\e608"}
+.iconLabel_G:before{content:"\e609"}
+
+/* label color */
+.highest_color{color:#00a651!important}
+.second_color{color:#50b848!important}
+.third_color{color:#bfd730!important}
+.fourth_color{color:#fff200!important}
+.fifth_color{color:#fdb913!important}
+.sixth_color{color:#f37021!important}
+.last_color{color:#ed1c24!important}
+
+/* ########## online label & product_fiche 2014.09. 23 & 2014.10.23 ########## */
+.online_labelWrap{font-size:inherit;padding:0;margin:1% 0;vertical-align:middle;display:block}
+.online_labelWrap a{display:inline-block!important;margin:2px 0 0 0}
+
+.online_label_wrap{font-size:inherit;padding:0;margin:1% 0;vertical-align:middle;display:block}
+.online_label_wrap a{display:inline !important;margin:2px 0 0 0}
+
+.product_fiche{display:inline!important;color:#292929;word-wrap:break-word;padding:0 5px 0 0;margin:0; font-weight:normal; }
+.product_fiche:hover,.product_fiche:focus{text-decoration:underline;color:#0071bf}
+
+
+/* promotion-text List */	
+.promotion-text { padding: 0 3%; margin:0 0 10px; font-size:13px;}
+html.ltr .promotion-text li { padding:0 0 0 10px; overflow: hidden; text-overflow:ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;  margin:7px 0 10px; line-height:16px; height:32px; }
+html.ltr .promotion-text li:before { position: absolute;  content: "•"; margin:0 0 0 -10px; font-size:10px; }
+
+@media screen and (min-width:48em) { 
+	/* promotion-text List */	
+	.promotion-text { padding: 0 4%; margin:10px 0 10px; font-size:16px;}
+	html.ltr .promotion-text li { padding:0 0 0 10px; margin:0 0 5px 0; line-height:18px; height:36px; }
+	html.ltr .promotion-text li:before { margin:0 0 0 -10px; font-size:10px; }
+}
+
+/* 카테고리 페이지 usp 리스트 동적 div */
+.ss_samsung.category #listText  { font-size:13px; padding:0 0 0 10px; }
+
+@media (min-width: 48em) {
+	.ss_samsung.category #listText { font-size:16px; padding:0 0 0 10px; }
+}
+
+
+/* 타이틀과 가격 겹침현상 가격데이터 뿌려질때 공백 문제 해결 */
+html.ltr .scrollwrapper>.container .label_wrap .product-card .product-description p.product-price,html.rtl .scrollwrapper>.container .label_wrap .product-card .product-description p.product-price{width:100%;box-sizing:border-box}
+
+/* ### Product 화면 온라인 라벨& Product fiche 추가되는 모듈에 높이값 조절 2014.10.23 ### */
+/* ecom-module 온라인라벨 */
+.sub-hero-wrap.label_wrap .ecom-module .online_labelWrap .jump-module-shim.label_wrap .jump-module .online_labelWrap{display:block;font-size:inherit;padding:0 0 0 1px;margin:0;vertical-align:middle}
+.jump-module .online_labelWrap{display:none}
+.jump-module.docked .online_labelWrap{display:block;font-size:inherit;padding:0 0 0 1px;margin:5px 0 0 0;vertical-align:middle}
+.sub-hero-wrap.label_wrap .ecom-module .product_fiche,.jump-module-shim.label_wrap .jump-module .online_labelWrap .product_fiche,.jump-module.docked .online_labelWrap .product_fiche{display:inline-block!important;padding:0 5px 0 0}
+.sub-hero-wrap.label_wrap .ecom-module .toggle.clearfix.y-toggle{margin:5px 25px; }
+@media (min-width: 80em) {
+	.sub-hero-wrap.label_wrap .ecom-module .online_labelWrap{margin:0}
+	.sub-hero-wrap.label_wrap .ecom-module .ecomText{text-align:right}
+	html.rtl .sub-hero-wrap.label_wrap .ecom-module .ecomText{text-align:left}
+	.sub-hero-wrap.label_wrap .ecom-module .ecomText p{display:inline-block}
+}
+@media (min-width: 80em) { .jump-module.docked .online_labelWrap{margin:0}}
+
+/* product-info-section 온라인라벨 */
+.product-info-section.label_wrap .ecom-module .num{font-size:20px}
+.ss_samsung .product-info-section.label_wrap .ecom-module .ecom-text .price .num .online_labelWrap,.ss_samsung .product-info-section.label_wrap .ecom-module .ecom-text .price .num .online_labelWrap span{text-decoration:none!important}
+
+/* ########## labelWrapSearch 2014.10.6 ########## */
+.energyLabelWrap{font-family:"SamsungIFRg";padding:25px 10px;margin:0 auto;width:100%;box-sizing:border-box}
+
+/* select box */
+.energyLabelWrap .dropdown{position:relative;display:inline-block;overflow:hidden;padding:0 2px 0 0;margin:5px 0 0 0;background:#f1f1f1}
+.energyLabelWrap .dropdown select{width:100%;max-width:100%;margin:0;padding:0;background:transparent url(../../b2b4/img/ico/ico_select.png) no-repeat right 6px;-webkit-appearance:none;border:none;box-shadow:none;border:none;outline:none;appearance:none;-webkit-appearance:none;font-size:12px;color:#747474;padding:3px 0;line-height:1.3}
+.energyLabelWrap .labelHeader{overflow:hidden;margin:0;box-sizing:border-box}
+.energyLabelWrap .labelHeader .title{overflow:hidden;margin:0;font-size:18px}
+.energyLabelWrap .labelHeader .languageSelect{overflow:hidden;margin:10px 0;padding:0 10px}
+.energyLabelWrap .labelHeader .languageSelect label{width:100%;display:block;margin:5px 4px 0 0;color:#444;font-size:14px;font-family:"SamsungIFBd"}
+.energyLabelWrap .labelHeader .dropdown{width:100%}
+.energyLabelWrap .labelProductType{margin:0 0 36px 0;overflow:hidden;box-sizing:border-box;padding:0 10px 10px;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2}
+.energyLabelWrap .labelProductType .selectList{overflow:hidden;margin:0}
+.energyLabelWrap .labelProductType .selectList label{display:block;float:left;width:100%;margin:10px 0;font-family:"SamsungIFBd";font-size:14px;color:#444}
+.energyLabelWrap .labelProductType .selectList .searchArea{position:relative;display:block;box-sizing:border-box;overflow:hidden;width:100%;font-size:11px;padding:0 25px 0 5px;color:#747474;line-height:1.3;background-color:#f1f1f1}
+.energyLabelWrap .labelProductType .selectList .dropdown{width:100%}
+.energyLabelWrap .labelProductType .selectList .searchArea input[type="text"]{width:100%;background-color:#f1f1f1;border:none;padding:5px 2px}
+.energyLabelWrap .labelProductType .selectList .searchArea button{position:absolute;right:5px;top:5px;padding:0 3px;display:inline-block;width:18px;height:15px}
+.energyLabelWrap .labelProductType .selectList .icon-search:before{content:"\e013";font-size:12px}
+.energyLabelWrap .labelSearchTip{overflow:hidden;margin:15px 0 0 0;padding:0 0 0 10px;font-size:12px;color:#aaa;background:url(../img/bulDotGray.gif) no-repeat 0 7px}
+.energyLabelWrap .labelSearchTip a{text-decoration:underline;color:#0079c5}
+.energyLabelWrap .labelProductTypeList{overflow:hidden;padding:0 0 15px;box-sizing:border-box;border-top:1px solid #e2e2e2}
+.energyLabelWrap .labelProductTypeList ul li{padding:15px 10px;border-bottom:1px solid #ddd}
+.energyLabelWrap .labelProductTypeList ul li p{overflow:hidden;width:100%;margin:0 0 5px 0;word-break:break-word}
+.energyLabelWrap .labelProductTypeList ul li p strong{overflow:hidden;display:inline-block;width:100%;font-size:14px;color:#575757;box-sizing:border-box;word-wrap:break-word}
+.energyLabelWrap .labelProductTypeList ul li p span{overflow:hidden;display:inline-block;word-wrap:break-word;width:100%;padding:0;font-size:12px;color:#747474;box-sizing:border-box}
+.energyLabelWrap .labelProductTypeList ul li p span a{text-decoration:underline;color:#0079c5}
+.energyLabelWrap .labelProductTypeList .labelSearchInfo{overflow:hidden;margin:15px 10px 0;padding:0 0 0 10px;font-size:12px;color:#aaa;background:url(../img/bulDotGray.gif) no-repeat 0 7px}
+
+@media (min-width:600px){
+/* select box */
+	.energyLabelWrap .labelHeader .languageSelect .dropdown{float:right;position:relative;display:inline-block;overflow:hidden;padding:0 2px 0 0;margin:5px 0 0 0;background:#f1f1f1}
+	.energyLabelWrap .labelHeader .title{overflow:hidden;margin:0;font-size:18px}
+	.energyLabelWrap .labelHeader .languageSelect{margin:5px 0}
+	.energyLabelWrap .labelHeader .languageSelect label{float:left;width:auto;display:inline-block;margin:5px 4px 0 0;color:#444;font-size:14px}
+	.energyLabelWrap .labelHeader .dropdown{width:110px}
+	.energyLabelWrap{padding:50px 10px}
+	.energyLabelWrap{margin:0 auto;width:100%;width:600px}
+	.energyLabelWrap .labelHeader{margin:0 0 6px 0}
+	.energyLabelWrap .labelHeader .title{width:auto}
+	.energyLabelWrap .labelHeader .languageSelect{margin:10px 0 0 0}
+	.energyLabelWrap .labelProductType{padding:8px 10px 10px}
+	.energyLabelWrap .labelProductType .selectList .searchArea{display:inline-block;width:214px}
+	.energyLabelWrap .labelProductType .selectList .dropdown{width:170px}
+	.energyLabelWrap .labelProductType .selectList .searchArea input[type="text"]{width:180px}
+	.energyLabelWrap .labelProductType .selectList .searchArea button{width:15px;height:15px}
+	.energyLabelWrap .labelSearchTip{margin:25px 0 0 0}
+	.energyLabelWrap .labelProductType .selectList{margin:0 0 10px 0}
+	.energyLabelWrap .labelProductType .selectList label{width:175px;margin:5px 0}
+	.energyLabelWrap .labelProductTypeList ul li p strong{width:260px}
+	.energyLabelWrap .labelProductTypeList ul li p span{width:300px}
+}
+ 
+ /* pdp wow 추가함 20141013 */
+.ss_samsung.pdp_wow .ss-compare-button{font-size:14px;font-family:"SamsungIFBd",Arial,sans-serif;font-weight:normal;text-transform:uppercase}
+@media (min-width:48em) { .ss_samsung.pdp_wow .ss-compare-button{font-size:16px}}
+
+html.ltr .scrollwrapper .container .grid .label_wrap.ac-set .col .product-container .inner .promotion-text{ display:none;}

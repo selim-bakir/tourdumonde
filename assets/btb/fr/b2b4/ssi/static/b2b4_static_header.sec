@@ -1,0 +1,324 @@
+
+
+<!--[if IE 7]><body class="ie7 legacy-ie"> <![endif]-->
+<!--[if IE 8]><body class="ie8 legacy-ie"> <![endif]-->
+<!--[if IE 9]><body class="ie9"> <![endif]-->
+<!--[if gte IE 10]><!--> <body> <!--<![endif]-->
+<!-- common skip menu -->
+<div class="skip-menu">
+	<a href="#content">Passer au contenu</a>
+</div>
+
+<div class="body-wrap" data-role="ui-nav-wrap">
+	<!-- 로그인 후에 뜨는 메세지창 span class="user-nickname" 로그인 네임 입력되는 영역 -->
+	<div class="welcome bg-main6">
+		<p class="fg-main1">Welcome <span class="user-nickname">JUN!</span> You have arrived at the new Samsung.com, designed just for you!</p>
+		<button type="button"><span class="blind">Close</span></button>
+	</div>
+
+	<!-- gnb_inc -->
+	<div class="header-wrap" id="header">
+		<div class="browser-notice">
+			<span>This website is best viewed using Internet Explorer 9 , Chrome , Firefox and newer browsers.</span>
+			<button type="button"><span class="blind">Close</span></button>
+		</div>
+		<div class="cookie-notice">
+			<span>
+				Ce site utilise des cookies. En continuant à naviguer sur le site, vous acceptez d’utiliser nos cookies.
+				<a href="/fr/business/privacy/" title="Prendre connaissance de notre politique de protection de la vie privée">Cliquez ici pour en savoir plus.</a>
+			</span>
+			<button type="button"><span class="blind">Close</span></button><!-- hide .notice-notice  -->
+		</div>
+
+		<div class="space"></div>
+
+		<div class="header">
+			<div class="logo">
+				<p>POUR LES PROFESSIONNELS</p>
+				<a href="/fr/business"><span class="blind">SAMSUNG</span></a>
+			</div>			
+			<button type="button" class="btn-ico ctl-nav" data-role="ui-nav-btn"><span class="label">Open Menu</span></button>
+			<div class="overlay"></div>	<!-- dimed layer -->
+			<div class="nav">
+				<!-- GNB -->
+				<ul class="local-menu" data-role="ui-nav">
+							<li class="sub" data-gnb="BIA001">
+			<a href="#" data-eng-title="Industry">Secteurs</a>
+			<div class="submenu-container has-flyout">
+				<ul data-role="ui-nav-sub">
+					<li class="sub">
+						<a href="#" class="retial-mobile-btn"></a>
+						<a href="/fr/business/industry/retail" class="retail-link" data-eng-title="Retail &amp; Hospitality" onclick="sendClickCode('gnb','b2b_industry:retail & hospitality');">Retail</a>
+						<div class="flyout">
+							<ul>
+								<li><a href="/fr/business/industry/retail/mass-merchandise" data-eng-title="Mass Merchandise" onclick="sendClickCode('gnb','b2b_industry:retail & hospitality:mass merchandise');">Grande distribution</a></li>
+								<li><a href="/fr/business/industry/retail/food-services" data-eng-title="Food Services" onclick="sendClickCode('gnb','b2b_industry:retail & hospitality:food services');">Restauration</a></li>
+								<li><a href="/fr/business/industry/retail/apparel" data-eng-title="Apparel" onclick="sendClickCode('gnb','b2b_industry:retail & hospitality:apparel');">Pr&ecirc;t &agrave; porter</a></li>
+								<li><a href="/fr/business/industry/retail/department-stores" data-eng-title="Department Stores" onclick="sendClickCode('gnb','b2b_industry:retail & hospitality:department stores');">Grands magasins</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/fr/business/industry/arena" data-eng-title="Arena" onclick="sendClickCode('gnb','b2b_industry:arena');">Arena &amp; Stade</a></li>
+					<li><a href="/fr/business/industry/hospitality" data-eng-title="Hospitality" onclick="sendClickCode('gnb','b2b_industry:hospitality');">Hospitality</a></li>
+					<li><a href="/fr/business/industry/finance" data-eng-title="Finance" onclick="sendClickCode('gnb','b2b_industry:finance');">Finance</a></li>
+					<li><a href="/fr/business/industry/transport-logistics" data-eng-title="Transport" onclick="sendClickCode('gnb','b2b_industry:transport');">Transport et logistique</a></li>
+					<li><a href="/fr/business/industry/government" data-eng-title="Government" onclick="sendClickCode('gnb','b2b_industry:government');">Gouvernement</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="sub" data-gnb="BIA002">
+			<a href="#" data-eng-title="Solution">Solutions</a>
+			<div class="submenu-container has-flyout">
+				<ul data-role="ui-nav-sub">
+					<li class="sub">
+						<a href="#" data-eng-title="Business Solution">Solutions par produit</a>
+						<div class="flyout">
+							<ul>
+								<li><a href="/fr/business/business-knox/" data-eng-title="KNOX Solutions" onclick="sendClickCode('gnb','b2b_solution:business solution:knox solutions');">Solutions KNOX</a></li>
+								<li><a href="/fr/business/solutions-services/smart-signage-solutions" data-eng-title="SMART Signage Solutions" onclick="sendClickCode('gnb','b2b_solution:business solution:smart signage solutions');">SMART Signage Solutions</a></li>
+								<li><a href="/fr/business/solutions-services/hospitality-display-solutions" data-eng-title="Hospitality Display Solutions" onclick="sendClickCode('gnb','b2b_solution:business solution:hospitality display solutions');">SMART Hospitality Display Solutions</a></li>
+								<li><a href="/fr/business/solutions-services/printing-solutions" data-eng-title="Printing Solutions" onclick="sendClickCode('gnb','b2b_solution:business solution:printing solutions');">Solutions d'impression</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="sub" data-gnb="BIA003">
+			<a href="#" data-eng-title="Product">Produits</a>
+			<div class="submenu-container has-flyout">
+				<ul data-role="ui-nav-sub">
+					<li class="sub">
+						<a href="#" data-eng-title="Mobile Devices">Mobilit&eacute;</a>
+						<div class="flyout">
+							<ul>
+								<li><a href="/fr/business/business-products/smartphones" data-eng-title="Smartphones" onclick="sendClickCode('gnb','b2b_product:mobile devices:smartphones');">Smartphones</a></li>
+								<li><a href="/fr/business/business-products/tablets" data-eng-title="Tablets" onclick="sendClickCode('gnb','b2b_product:mobile devices:tablets');">Tablettes</a></li>
+								<li><a href="/fr/business/business-products/wearables" data-eng-title="Wearables" onclick="sendClickCode('gnb','b2b_product:mobile devices:wearables');">Objets connect&eacute;s </a></li>
+								<li><a href="/fr/business/business-products/mobile-phones" data-eng-title="Mobile phones" onclick="sendClickCode('gnb','b2b_product:mobile devices:mobile phones');">Mobiles</a></li>
+								<li><a href="/fr/business/business-products/accessories" data-eng-title="Accessories" onclick="sendClickCode('gnb','b2b_product:mobile devices:accessories');">Accessoires</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="sub">
+						<a href="#" data-eng-title="Displays">Affichage</a>
+						<div class="flyout">
+							<ul>
+								<li><a href="/fr/business/business-products/large-format-display" data-eng-title="Large Format Display" onclick="sendClickCode('gnb','b2b_product:displays:large format display');">SMART Signage</a></li>
+								<li><a href="/fr/business/business-products/cloud-display" data-eng-title="Cloud Display" onclick="sendClickCode('gnb','b2b_product:displays:cloud display');">SMART Cloud Display</a></li>
+								<li><a href="/fr/business/business-products/hospitality-display" data-eng-title="Hospitality Display" onclick="sendClickCode('gnb','b2b_product:displays:hospitality display');">SMART Hospitality Display </a></li>
+								<li><a href="/fr/business/smart-signage-tv/" data-eng-title="SMART Signage TV" onclick="sendClickCode('gnb','b2b_product:displays:smart signage tv');">SMART Signage TV</a></li>
+								<li><a href="/fr/business/business-products/business-monitor" data-eng-title="Business Monitor" onclick="sendClickCode('gnb','b2b_product:displays:business monitor');">Moniteurs Professionnels</a></li>
+								<li><a href="/fr/business/business-products/smart-led-signage" data-eng-title="SMART LED Signage" onclick="sendClickCode('gnb','b2b_product:displays:smart led signage');">SMART LED Signage</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/fr/business/business-products/printers-multifunction" data-eng-title="Printers &amp; Multifunction" onclick="sendClickCode('gnb','b2b_product:printers & multifunction');">Imprimantes &amp; Multifonctions</a></li>
+					<li><a href="/fr/business/business-products/notebook-pc" data-eng-title="Notebook PC" onclick="sendClickCode('gnb','b2b_product:notebook pc');">PC Portables</a></li>
+					<li><a href="/fr/business/business-products/ssd" data-eng-title="SSD" onclick="sendClickCode('gnb','b2b_product:ssd');">SSD</a></li>
+					<li><a href="/fr/business/business-products/led-lamp" data-eng-title="LED Lamp" onclick="sendClickCode('gnb','b2b_product:led lamp');">Lampes LED</a></li>
+					<li><a href="/fr/business/business-products/system-air-conditioner" data-eng-title="System Air Conditioner" onclick="sendClickCode('gnb','b2b_product:system air conditioner');">Climatisation</a></li>
+				</ul>
+			</div>
+		</li>
+		<li data-gnb="BIA004"><a href="/fr/business/insights/" data-eng-title="Insights" onclick="sendClickCode('gnb','b2b_insights');">Insights</a></li>
+		<li data-gnb="BIA005"><a href="/fr/business/support/" data-eng-title="Support" onclick="sendClickCode('gnb','b2b_support');">Assistance</a></li>
+		<li class="sub" data-gnb="BIA001">
+			<a href="#" data-eng-title="Partenaires">Partenaires</a>
+			<div class="submenu-container">
+				<ul data-role="ui-nav-sub">
+					<li><a href="http://www.samsung.com/fr/business/step/" data-eng-title="Partenaires Revendeurs" onclick="sendClickCode('gnb','b2b_partenaires:partenaires revendeurs');">Partenaires Revendeurs</a></li>
+					<li><a href="http://www.samsung.com/fr/business/partenaire-solution/index.html" data-eng-title="Partenaires Solutions" onclick="sendClickCode('gnb','b2b_partenaires:partenaires solutions');">Partenaires Solutions</a></li>
+				</ul>
+			</div>
+		</li>
+		<li data-gnb="BIA006"><a href="#" data-eng-title="Presse">Presse</a></li>
+
+				</ul>
+				<!-- //GNB -->
+
+				<!-- utility menu -->
+				<ul class="direct">
+					<li><a href="/fr" class="btn link outlink" target="_blank" title="Nouvelle fenêtre" onclick="sendClickCode('gnb','b2b_utility menu:consumer section');">POUR LES PARTICULIERS</a></li>
+<!-- <li><a href="#" data-role="btn-partnerportal" class="btn link outlink" target="_blank" title="Nouvelle fenêtre" onclick="sendClickCode('gnb','b2b_utility menu:partner portal');">PARTENAIRES REVENDEURS</a></li> -->
+<li><a href="/fr/business/step/" class="btn link outlink" target="_self" title="Nouvelle fenêtre" onclick="sendClickCode('gnb', 'b2b_utility menu:partner dealer');">PARTENAIRES REVENDEURS</a></li>
+<li><a href="/fr/business/partenaire-solution/index.html" class="btn link outlink" target="_self" title="Nouvelle fenêtre" onclick="sendClickCode('gnb', 'b2b_utility menu:partner solution');">PARTENAIRES SOLUTIONS</a></li>
+
+<script src="assets_js/analytics.js"></script>
+				</ul>
+				<!-- //utility menu -->
+			</div>
+
+			<div class="util-menu">
+				<div class="sch" data-role="ui-globalsearch">
+					<button type="button" class="btn-ico ctl-frm" data-role="ui-btn-search"><span class="label">Ouvrir un formulaire de recherche</span></button>
+					<form onsubmit="return false;">
+						<label for="p-schkwd" class="blind">Search Keyword</label>
+						<input id="p-schkwd" type="text" placeholder="Rechercher" data-role="ui-search-input" maxlength="100" autocomplete="off">
+						<a href="javascript:void(0);" class="txt_del" data-role="ui-search-btn-del"><img src="assets_img/ico_search_close.png" alt="Text Delete"></a>
+						<div class="auto-complete">
+							<div class="auto-complete-wrap">								
+								<div class="popular">
+									<div class="tit">Popular</div>
+									<ul data-role="ul-globalsearch-popular-list"></ul>
+								</div>
+								<div class="recently-viewed">
+									<div class="tit">Recent</div>
+									<ul data-role="ul-globalsearch-recent-list"></ul>
+								</div>
+							</div>
+							<ul class="autocomplete-list" data-role="ui-globalsearch-autocomplete-list"></ul>
+						</div>
+						<button type="submit" class="btn-ico submit-sch"><span class="label">Rechercher</span></button>
+					</form>
+				</div>
+
+				<button type="button" class="btn-ico call-smartfinder" data-role="ui-btn-show-smartfinder"><span class="label">smartfinder</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- //gnb_inc -->
+
+	<!-- smartfinder layer -->
+	<!-- smartfinder layer -->
+<div class="smartfinder" data-role="ui-smartfinder" style="display:none">
+	<div class="top_banner">
+		<div class="call-smartfinder tit" data-msg-smartfinder="headTitle"><!-- Samsung Smartfinder --></div>
+	</div>
+	<div class="step_area">
+		<ul>
+			<li class="on" data-role="ui-smartfinder-step1" data-step-idx="1">
+				<a href="javascript:;" class="step_tit" data-role="step-btn-expand" style="display:none"><span><span data-msg-smartfinder="step1ClosedTitle"><strong>STEP 1:</strong> WHAT IS YOUR INDUSTRY </span><span class="pre-step" style="display:none"><!-- EDUCATION --></span><span class="step-arrow"><img src="assets_img/triangle_off.png" alt=""></span></span></a>
+				<div class="inner">
+					<div class="step-tit" data-msg-smartfinder="step1Title"><!-- <strong>STEP 1 :</strong> WHAT IS YOUR INDUSTRY? --></div>
+					<p data-msg-smartfinder="step1SubTitle"><!-- Tell us a little about your business and we’ll quickly find the products, solutions and partners that are right for you. --></p>
+					<ul data-role="ui-smartfinder-step-list"></ul>
+					<span><img src="assets_img/triangle_on.png" alt=""></span>
+				</div>
+			</li>
+			<li data-role="ui-smartfinder-step2" data-step-idx="2">
+				<a href="javascript:;" class="step_tit" data-role="step-btn-expand"><span><span data-msg-smartfinder="step2ClosedTitle"><strong>STEP 2:</strong> WHAT IS YOUR INTEREST?</span> <span class="pre-step" style="display:none"><!-- ENRICH THE CLASSROOM WITH POSSIBLILITIES --></span><span class="step-arrow"><img src="assets_img/triangle_off.png" alt=""></span></span></a>
+				<div class="inner" style="display:none">
+					<div class="step-tit" data-msg-smartfinder="step2Title"><!-- <strong>STEP2 2 :</strong> WHAT IS THE AREA YOU ARE MOST INTERESTED IN? --></div>
+					<p data-msg-smartfinder="step2SubTitle"><!-- One more question and we will show you recommendations. --></p>
+					<ul data-role="ui-smartfinder-step-list"></ul>
+					<span><img src="assets_img/triangle_on.png" alt=""></span>
+				</div>
+			</li>
+			<li class="last" data-role="ui-smartfinder-step3" data-step-idx="3">
+				<a href="javascript:;" class="step_tit" data-role="step-btn-expand"><span><span data-msg-smartfinder="step3ClosedTitle"><strong>STEP 3:</strong> HOW CAN WE HELP?</span></span></a>
+				<div class="inner" style="display:none">
+					<div class="step-tit" data-msg-smartfinder="step3Title"><!-- <strong>STEP 3 :</strong> WHAT WILL BEST HELP YOU AT THIS STAGE? --></div>
+					<p data-msg-smartfinder="step3SubTitle"><!-- Choose one to receive specific recommendations. --></p>
+					<ul data-role="ui-smartfinder-step-list"></ul>
+					<span><img src="assets_img/triangle_on.png" alt=""></span>
+				</div>
+			</li>
+		</ul>
+
+		<!-- RECOMMENDED -->
+		<div class="smt_tab_cont cont01" style="display:none" data-role="ui-smartfinder-cont">
+			<div class="module_wrap">
+				<!-- RECOMMENDED SOLUTIONS -->
+				<div class="module article-thumb" data-role="ui-smartfinder-recommend-solution">
+					<div class="grid-row">
+						<div class="sec-title" data-msg-smartfinder="recommendedSolutions"><!-- RECOMMENDED SOLUTIONS --></div>
+					</div>
+					<div class="grid-row">
+						<div class="grid-colgroup" data-role="ui-smartfinder-result">
+						</div>
+					</div>
+					<div class="wrapper-act">
+					</div>
+				</div>
+				<!-- //RECOMMENDED SOLUTIONS -->
+				<!-- RECOMMENDED PRODUCTS -->
+				<div class="module list-thumb" data-role="ui-smartfinder-recommend-products">
+					<div class="grid-row">
+						<div class="sec-title" data-msg-smartfinder="recommendedProducts"><!-- RECOMMENDED PRODUCTS --></div>
+					</div>
+					<div class="grid-row" data-role="ui-smartfinder-result">
+					</div>
+				</div>
+				<!-- //RECOMMENDED PRODUCTS -->
+				<div class="wrapper-act">
+					<button type="button" class="btn-type2 hide" title="Close recommanded products" data-role="ui-btn-hide-smartfinder" data-msg-smartfinder="close"><!-- Close --></button>
+				</div>
+			</div>
+		</div>
+		<!-- //RECOMMENDED -->
+
+		<!-- REFERENCE CASES -->
+		<div class="smt_tab_cont cont02" style="display:none;" data-role="ui-smartfinder-cont">
+			<div class="module article-txt" data-role="ui-smartfinder-reference">
+				<div class="grid-row">
+					<div class="sec-title" data-msg-smartfinder="referenceCases"><!-- REFERENCE CASES --></div>
+				</div>
+				<div class="grid-row align_btn3">
+					<div class="grid-colgroup" data-role="ui-smartfinder-result">
+					</div>
+				</div>
+				<div class="wrapper-act">
+					<button type="button" class="btn-type2 hide" title="Close reference cases" data-role="ui-btn-hide-smartfinder" data-msg-smartfinder="close"><!-- Close --></button>
+				</div>
+			</div>
+		</div>
+		<!-- //REFERENCE CASES -->
+
+		<!-- RELATED insights -->
+		<div class="smt_tab_cont cont03" style="display:none;" data-role="ui-smartfinder-cont">
+			<div class="module article-txt" data-role="ui-smartfinder-insights">
+				<div class="grid-row">
+					<div class="sec-title" data-msg-smartfinder="relatedInsights"><!-- RELATED INSIGHTS --></div>
+				</div>
+				<div class="grid-row align_btn4" data-role="ui-smartfinder-result">
+				</div>
+				<div class="wrapper-act">
+					<button type="button" class="btn-type2 hide" title="Close related insights list" data-role="ui-btn-hide-smartfinder" data-msg-smartfinder="close"><!-- Close --></button>
+				</div>
+			</div>
+		</div>
+		<!-- //RELATED insights -->
+
+		<!-- Samsung Vision & POV -->
+		<div class="smt_tab_cont cont04" style="display:none;" data-role="ui-smartfinder-cont">
+
+			<div class="module article-txt" data-role="ui-smartfinder-visionpov">
+				<div class="grid-row">
+					<div class="sec-title" data-msg-smartfinder="samsungVision"><!-- Samsung Vision & POV --></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-colgroup" data-role="ui-smartfinder-result">
+					</div>
+				</div>
+				<div class="wrapper-act">
+					<button type="button" class="btn-type2 hide" title="Close Samsung Vision & POV" data-role="ui-btn-hide-smartfinder" data-msg-smartfinder="close"><!-- Close --></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Samsung Vision & POV -->
+
+		<!-- Contact Us -->
+		<div class="smt_tab_cont cont05" style="display:none;" data-role="ui-smartfinder-cont">
+			<div class="module article-txt" data-role="ui-smartfinder-contactus">
+				<div class="grid-row">
+					<div class="sec-title" data-msg-smartfinder="contactUs"><!-- CONTACT US --></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-colgroup" data-role="ui-smartfinder-result">
+					</div>
+				</div>
+				<div class="wrapper-act">
+					<button type="button" class="btn-type2 hide" title="Close contact us" data-role="ui-btn-hide-smartfinder" data-msg-smartfinder="close"><!-- Close --></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Contact Us -->
+	</div>
+</div>
+<!-- //smartfinder layer -->
+	<!-- //smartfinder layer -->
+
+	<!-- contents wrapper -->
+	<div class="content-wrap">
+		<div id="content"><span class="blind">Content</span></div></div></div></body>

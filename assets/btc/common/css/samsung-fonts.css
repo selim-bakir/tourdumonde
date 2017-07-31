@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* FONTS : Custom Samsung font. */
+@font-face {font-family:"samsungIcon";src:url("../next/font/samsungIcon.woff") format("woff"),url("../next/font/samsungIcon.ttf") format("truetype"),url("../next/font/samsungIcon.svg#samsung") format("svg");font-weight:normal;font-style:normal}
+
+@font-face {font-family:"SamsungIFRg";src:url("../next/font/SamsungIF_Rg.woff") format("woff"),url("../next/font/SamsungIF_Rg.ttf") format("truetype"),url("../next/font/SamsungIF_Rg.svg#SamsungIF_Rg") format("svg");font-weight:normal;font-style:normal}
+@font-face {font-family:"SamsungIFBd";src:url("../next/font/SamsungIF_Bd.woff") format("woff"),url("../next/font/SamsungIF_Bd.ttf") format("truetype"),url("../next/font/SamsungIF_Bd.svg#SamsungIF_Bd") format("svg");font-weight:normal;font-style:normal}
+@font-face {font-family:"SamsungIFBlk";src:url("../next/font/SamsungIF_Blk.woff") format("woff"),url("../next/font/SamsungIF_Blk.ttf") format("truetype"),url("../next/font/SamsungIF_Blk.svg#SamsungIF_Blk") format("svg");font-weight:normal;font-style:normal}
+
+@font-face {font-family:"SamsungSharpSans";src:url("../font/SamsungSharpSansRg.woff") format("woff"),url("../font/SamsungSharpSansRg.ttf") format("truetype"),url("../font/SamsungSharpSansRg.svg#SamsungSharpSansRg") format("svg");font-weight:300; font-style:normal}
+@font-face {font-family:"SamsungSharpSans";src:url("../font/SamsungSharpSansMd.woff") format("woff"),url("../font/SamsungSharpSansMd.ttf") format("truetype"),url("../font/SamsungSharpSansMd.svg#SamsungSharpSansMd") format("svg");font-weight:normal;font-style:normal}
+@font-face {font-family:"SamsungSharpSans";src:url("../font/SamsungSharpSansBd.woff") format("woff"),url("../font/SamsungSharpSansBd.ttf") format("truetype"),url("../font/SamsungSharpSansBd.svg#SamsungSharpSansBd") format("svg");font-weight:bold;font-style:normal}
+
+@font-face {font-family:"SamsungOne";src:url("../font/SamsungOneLt.woff") format("woff"),url("../font/SamsungOneLt.ttf") format("truetype"),url("../font/SamsungOneLt.svg#SamsungOneLt") format("svg");font-weight:normal;font-style:normal}
+@font-face {font-family:"SamsungOne";src:url("../font/SamsungOneRg.woff") format("woff"),url("../font/SamsungOneRg.ttf") format("truetype"),url("../font/SamsungOneRg.svg#SamsungOneRg") format("svg");font-weight:bold;font-style:normal}
+
+@font-face {font-family:"SamsungOneArabic";src:url("../font/SamsungOneArabicLt.woff") format("woff"),url("../font/SamsungOneArabicLt.ttf") format("truetype"),url("../font/SamsungOneArabicLt.svg#SamsungOneArabicLt") format("svg");font-weight:normal;font-style:normal}
+@font-face {font-family:"SamsungOneArabic";src:url("../font/SamsungOneArabicRg.woff") format("woff"),url("../font/SamsungOneArabicRg.ttf") format("truetype"),url("../font/SamsungOneArabicRg.svg#SamsungOneArabicRg") format("svg");font-weight:bold;font-style:normal}
+
+@font-face {font-family:"SamsungOneHebrew";src:url("../font/SamsungOneHebrewLt.woff") format("woff"),url("../font/SamsungOneHebrewLt.ttf") format("truetype"),url("../font/SamsungOneHebrewLt.svg#SamsungOneHebrewLt") format("svg");font-weight:normal;font-style:normal}
+@font-face {font-family:"SamsungOneHebrew";src:url("../font/SamsungOneHebrewRg.woff") format("woff"),url("../font/SamsungOneHebrewRg.ttf") format("truetype"),url("../font/SamsungOneHebrewRg.svg#SamsungOneHebrewRg") format("svg");font-weight:bold;font-style:normal}
+
+@font-face {font-family:"SamsungOneSCN";src:url("../font/SamsungOneSCN-450.woff") format("woff"),url("../font/SamsungOneSCN-450.ttf") format("truetype"),url("../font/SamsungOneSCN-450.svg#SamsungOneSCN-450") format("svg");font-weight:normal;font-style:normal}
+@font-face {font-family:"SamsungOneSCN";src:url("../font/SamsungOneSCN-600.woff") format("woff"),url("../font/SamsungOneSCN-600.ttf") format("truetype"),url("../font/SamsungOneSCN-600.svg#SamsungOneSCN-600") format("svg");font-weight:bold;font-style:normal}
+
+@font-face {font-family:"SamsungOneTCN";src:url("../font/SamsungOneTCN-450.woff") format("woff"),url("../font/SamsungOneTCN-450.ttf") format("truetype"),url("../font/SamsungOneTCN-450.svg#amsungOneTCN-450") format("svg");font-weight:normal;font-style:normal}
+@font-face {font-family:"SamsungOneTCN";src:url("../font/SamsungOneTCN-600.woff") format("woff"),url("../font/SamsungOneTCN-600.ttf") format("truetype"),url("../font/SamsungOneTCN-600.svg#SamsungOneTCN-600") format("svg");font-weight:bold;font-style:normal}

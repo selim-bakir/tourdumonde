@@ -1,0 +1,444 @@
+<!-- BEGIN: static_footer_new.html -->
+	<!--  Login POPUP -->
+	<script>
+		var LOGIN = {
+				msg : {
+					signBtnText1 : 'Se connecter',
+					signBtnText2 : 'Se déconnecter',
+
+					errorTitleText : 'Pas d\'accès',
+					errorText1 : 'Votre compte a ét?temporairement bloqu?car nous avons reçu des rapports sur des activités abusives et\/ou des contenus inappropriés. Veuillez nous excuser pour le désagrément occasionn? Prenez contact avec notre centre VoC.',
+					errorText2 : 'Votre compte a ét?bloqu? Veuillez nous excuser pour le désagrément occasionn? Veuillez prendre contact avec notre centre VoC pour obtenir de l\'aide. Merci.',
+					errorText3 : 'Veuillez nous excuser pour le désagrément occasionn? Nous avons rencontr?un problème lors du traitement de votre demande d\'ouverture de session. Veuillez prendre contact avec notre centre VoC pour obtenir de l\'aide. Merci.',
+					errorText4 : 'Les fonctions connexion et e-commerce sont actuellement indisponibles en raison d\'une maintenance technique.'
+				}
+		};
+	</script>
+<!-- login -->
+<form id="loginForm" name="loginForm" method="post" action="https://account.samsung.com/account/check.do">
+	
+
+	<input type="hidden" name="actionID" value="StartAP">
+	<input type="hidden" name="serviceID" value="z734ero6v9">
+	
+		
+		
+			<input type="hidden" name="serviceName" value="SAMSUNG">
+		
+	
+	<input type="hidden" name="domain" value="www.samsung.com">
+	<!--<input type="hidden" name="domain" value="www.samsung.com" />-->
+	<input type="hidden" name="countryCode" value="FR">
+	<input type="hidden" name="languageCode" value="fr">
+	<!-- 20140725 YBW registURL http -->
+	
+		
+		
+			<input type="hidden" name="registURL" value="https://www.samsung.com:443/fr/afterLogin">
+			<!--<input type="hidden" name="registURL" value="http://www.samsung.com:80/fr/afterLogin" />-->
+		
+	
+	<input type="hidden" name="returnURL" id="returnURL" value="">
+	<input type="hidden" name="goBackURL" id="goBackURL" value="">
+	<input type="hidden" name="ssoType" value="OPT_VAL">
+	<input type="hidden" name="svcIptLgnID" id="userId" value="">
+	<input type="hidden" name="svcIptLgnPD" id="userPass" value="">
+	<!-- 20140725 YBW emailActivationURL Http -->
+	<!--<input type="hidden" name="emailActivationURL" value="https://www.samsung.com:443/fr/emailActivationURL"/>-->
+	<!--<input type="hidden" name="emailActivationURL" value="http://www.samsung.com:80/fr/emailActivationURL"/>-->
+</form>
+
+<!-- join -->
+		<form id="joinForm" name="joinForm" method="post" action="https://account.samsung.com/account/check.do">
+	
+
+	<input type="hidden" name="actionID" value="SignupAP">
+	<input type="hidden" name="serviceID" value="z734ero6v9">
+	
+	<!--<input type="hidden" name="serviceID" value="h1j775k21q" />-->
+	
+		
+		
+			<input type="hidden" name="serviceName" value="SAMSUNG">
+		
+	
+	<input type="hidden" name="domain" value="www.samsung.com">
+	<!--<input type="hidden" name="domain" value="www.samsung.com" />-->
+	<input type="hidden" name="countryCode" value="FR">
+	<input type="hidden" name="languageCode" value="fr">
+	<!-- 20140725 YBW registURL Http -->
+	
+		
+		
+				<input type="hidden" name="registURL" value="https://www.samsung.com:443/fr/afterLogin">
+			<!--<input type="hidden" name="registURL" value="http://www.samsung.com:80/fr/afterLogin" />-->
+		
+	
+	<input type="hidden" name="returnURL" id="joinReturnURL" value="">
+	<input type="hidden" name="goBackURL" id="joinGoBackURL" value="">
+	<input type="hidden" name="ssoType" value="OPT_VAL">
+	<!-- 20140725 YBW emailActivationURL Http -->
+	<!--<input type="hidden" name="emailActivationURL" value="https://www.samsung.com:443/fr/emailActivationURL"/>-->
+	<!--<input type="hidden" name="emailActivationURL" value="http://www.samsung.com:80/fr/emailActivationURL"/>-->
+</form>
+
+<!-- Find Email -->
+		<form id="findAccountForm" name="findAccountForm" method="post" action="https://account.samsung.com/account/check.do">
+	
+
+	<input type="hidden" name="actionID" value="FindEmail">
+	<input type="hidden" name="serviceID" value="z734ero6v9">
+	
+		
+		
+			<input type="hidden" name="serviceName" value="SAMSUNG">
+		
+	
+	<input type="hidden" name="domain" value="www.samsung.com">
+	<!--<input type="hidden" name="domain" value="www.samsung.com" />-->
+	<input type="hidden" name="countryCode" value="FR">
+	<input type="hidden" name="languageCode" value="fr">
+	<input type="hidden" name="goBackURL" id="findGoBackURL" value="">
+	<input type="hidden" name="ssoType" value="OPT_VAL">
+</form>
+<!-- login end -->
+
+	<div class="layer_popup" id="loginLayerPopup" style="display: none;">
+		<div id="sign_wrap" class="popAlign" style="top: 80px; left: 382px;">
+			<form action="#" method="post" name="SloginForm" id="SloginForm">
+				<fieldset>
+					<legend>Connexion</legend>
+					<div class="sign-inner-wrap">
+						<div class="title">Connexion</div>
+						<div class="popup_cont">
+							<h2 class="sub-tit">Connectez-vous avec votre compte Samsung</h2>
+							<div class="input-wrap">
+								<label for="E-mail">Adresse Email</label>
+								<div class="input">
+									<input type="text" class="sign_input" name="E-mail" id="E-mail" data-focus-id="email" data-tab-previous="shop-popover-close" autocomplete="off" maxlength="100">
+								</div>
+							</div>
+							<!-- [DEV] : error message -->
+							<p class="error" id="errorId" style="display: none;"><span class="icon-alert"></span>Saisissez votre adresse e-mail.</p>
+							<div class="chk">
+								<input type="checkbox" name="accept-terms" id="acceptRemember">
+								<label for="acceptRemember">Mémoriser mon adresse email</label>
+							</div>
+							<div class="input-wrap mgt15">
+								<label for="pw">Mot de passe</label>
+								<div class="input">
+									<input type="password" class="sign_input" name="pw" id="pw" autocomplete="off" maxlength="100">
+								</div>
+							</div>
+							<!-- [DEV] : error message -->
+							<p class="error" id="errorPw" style="display: none;"><span class="icon-alert"></span>Saisissez un mot de passe</p>
+							<p class="sign-link"><a href="javascript:void(0);" class="cta find-account-btn">Adresse courriel ou mot de passe oublié ?<span class="icon-link-play"></span></a></p>
+							<div class="btn-wrap ac">
+								<a href="javascript:void(0);" class="button sign-in-btn">Connexion</a>
+								<p>Pas encore membre ? <a href="javascript:void(0);" class="cta sign-up-btn">S'inscrire maintenant <span class="icon-link-play"></span></a></p>
+							</div>
+							<!--<div class="connect_wrap">
+								<div class="connet-tit">Se connecter via</div>
+								<div class="sns-wrap">
+									<iframe src="" id="snsIframe" width="100%" height="40" frameborder="0" scrolling="no"></iframe>
+								</div>	                        
+								<div class="toggle-layer">                	
+									<a href="javascript:void(0);" class=Connexion"toggle signToggle"  id="signToggleArrow">
+										<span class="toggle-tit"> via les réseaux sociaux ?</span>
+										<span class="icon-down-arrow"></span>
+										<span class="icon-down-arrow icon-up-arrow">addclass icon-up-arrow, msg:code common.notice.collapse.wcag</span>
+									</a>
+									<div class="toggle-content">
+										<p>Vous pouvez utiliser votre connexion via les réseaux sociaux pour ensuite créer votre compte Samsung account plus simplement.</p>
+									</div>
+								</div>							
+							</div>-->
+						</div>
+						<button class="close-button icon-close-x login-close-btn" data-focus-id="shop-popover-close" data-tab-next="email" tabindex="0"><span class="blind">Close</span></button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<div class="layer_popup" id="privacyPopup" style="display: none;">
+		<div id="popup_privacy" class="popAlign">
+			<form action="#" method="post" name="" id="">
+				<fieldset>
+					<legend>Politique de protection de la vie privée</legend>
+					<div class="popup_wrap">
+						<div class="popup_title">Politique de protection de la vie privée</div>
+						<div class="popup_cont">
+							<div class="privacy_wrap">
+								<div class="check_box">
+									<input type="checkbox" name="privacy-terms" id="privacy-terms">
+									<label for="privacy-terms" class="check_text">J’ai lu et j’accepte la politique de protection de la vie privée de Samsung.com. <a href="/fr/info/privacy.html" target="_blank" class="privacy_link">Politique de protection de la vie privée</a></label>
+									<!-- ERROR : Clicked PROCEED TO STORE button : display:block -->
+									<p class="check_error" id="errorPrivacy" style="display: none;">Cochez cette case pour poursuivre vers Samsung.com.</p>
+									<!-- //ERROR : Clicked PROCEED TO STORE button -->
+								</div>
+								<div class="check_box">
+									<input type="checkbox" name="privacy-terms2" id="privacy-terms2">
+									<label for="privacy-terms2" class="check_text">En cochant cette case, j’accepte de recevoir des informations de la part de Samsung:</label>
+									<p class="check_txt">Activez cette option pour recevoir des informations sur les nouveaux produits et services, les offres spéciales, évènements ainsi que les lettres d’information.</p>
+								</div>
+								
+									
+									<div class="privacy_btn">
+									<a href="javascript:void(0)" class="button" id="privacyBtn">POURSUIVRE VERS SAMSUNG.COM</a>
+									<a href="javascript:void(0)" class="button login-leave-btn">QUITTER LA PAGE</a>
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+						<button class="close-button icon-close-x login-leave-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+							<span class="blind">Fermer la politique de protection de la vie privée</span>
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<div class="layer_popup" id="preferencePopup" style="display: none;">
+		<div id="popup-type04" class="popAlign">
+			<div class="popup_wrap">
+				<h2 class="pop-tit">Contrôle des préférences</h2>
+				<p class="msg-text">Aidez-nous? Vous proposer les meilleures recommandations en mettant à jour vos préférences sur nos produits.</p>
+				<div class="pop-btn">
+					<a href="javascript:void(0)" class="button" id="preferenceCheckBtn" title="Go to preference check page ">Oui</a>
+					<a href="javascript:void(0)" class="button login-close-btn" title="Preference check later">PLUS TARD</a>
+				</div>
+				<button class="close-button icon-close-x login-close-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+					<span class="blind">Fermer le contrôle des préférences</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="layer_popup" id="confirmPopup" style="display: none;">
+		<div id="popup-type02" class="popAlign">
+			<div class="popup_wrap">
+				<h2 class="pop-tit"></h2>
+				<p class="msg-text tc"></p>
+				<div class="pop-btn">
+					<a href="javascript:void(0)" class="button login-leave-btn" title="No Access OK">OK</a>
+				</div>
+				<button class="close-button icon-close-x login-leave-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+					<span class="blind">Fermer Pas d'accès</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Add NextGen Store Cart -->
+	<div class="layer_popup">
+		<div id="gloval_message_popup" class="popup-nextgen-type popAlign">
+			<div class="popup_wrap">
+				<p class="msg-text tc">Désol? stock insuffisant pour votre panier.</p>
+				<div class="pop-btn">
+					<a href="#" class="button">OK</a>
+				</div>
+				<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+					<span class="blind">Fermer Layer Popup</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="layer_popup">
+		<div id="popup_delete_product_cart" class="popup-nextgen-type popAlign">
+			<div class="popup_wrap">
+				<h2 class="pop-tit">Supprimer un Produit</h2>
+				<p class="msg-text">Etes-vous sûr de vouloir supprimer ce produit ?</p>
+				<div class="pop-btn">
+					<a href="#" class="button" id="btnMoveToWishList" onclick="javascript: removeConfirmButton('Y');">AJOUTER ?MES ENVIES</a>
+					<a href="#" class="button gray" onclick="javascript: removeConfirmButton('N');">SUPPRIMER</a>
+				</div>
+				<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+					<span class="blind">Fermer Layer Popup</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- // Add NextGen Store Cart -->
+
+	<div class="layer_popup">
+		<div id="popup_alert" class="popup-nextgen-type popAlign">
+			<div class="popup_wrap">
+				<p class="msg-text tc"></p>
+				<div class="pop-btn">
+					<a href="javascript:void(0);" class="button alert-ok-button">OK</a>
+				</div>
+				<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+					<span class="blind">Fermer Layer Popup</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+<div id="dimContainer"> 
+</div>
+
+	<footer id="footer" role="contentinfo">
+    <!--googleoff: all-->
+		<!--<div class="gb-legal">
+			<div class="gb-legal__inner">
+				<div class="gb-legal__inner-wrap gb-legal__inner-wrap__col1">--><!-- [D] If this has one column, add '.gb-legal__inner-wrap__col1' class -->
+					<!--<div class="gb-legal__column disclaimerBox">
+*Only compatible with select cards, carriers and Samsung devices; see the <a href="#">Samsung Pay Support</a> page for compatibility information. †See <a href="#">Terms & Conditions</a> for additional details.<br>
+<br>
+© 2015 Samsung Electronics America, Inc. Samsung, Galaxy Note, S Pen and Gear S are all trademarks or registered trademarks of Samsung Electronics Co., Ltd. Use only in accordance with law. Other company and product names mentioned may be trademarks of their respective owners. Screen images simulated. Actual appearances may vary.
+					</div>
+				</div>
+			</div>
+		</div>-->
+        
+        
+<div class="gb-footer">
+  <div class="gb-footer__top">
+    <div class="gb-footer__inner">
+      <div class="gb-footer__container">
+        <div class="gb-footer__btn-top"> <a href="#" data-omni="click" data-omni-type="jumpto" data-omni-data="back to top:footer" class="back-top">Retour en haut
+</a> </div>
+        <div class="gb-footer__col-wrap">
+          <div class="gb-footer__nav-link gb-footer__col2">
+		  <strong><a href="/fr/info/sitemap.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:sitemap">Plan du site</a></strong>
+		    <ul class="gb-footer__col4">
+              <li class="gb-footer__item"><a href="/fr/aboutsamsung/index.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:about us">A propos de Samsung</a></li>
+              <li class="gb-footer__item gb-footer__blank"><a href="http://www.samsung.com/us/aboutsamsung/ir/newsMain.do" data-omni="click" data-omni-type="footer" data-omni-data="footer:investor relations" title="Open in a new window" target="_blank">Investisseurs</a></li>
+              <li class="gb-footer__item"><a href="/fr/news/" data-omni="click" data-omni-type="footer" data-omni-data="footer:news">Presse</a></li>
+			  <li class="gb-footer__item"><a href="/fr/explorer/" data-omni="click" data-omni-type="footer" data-omni-data="footer:discover">Explorer</a></li>
+              <li class="gb-footer__item"><a href="http://ouacheterenmagasin.samsung.fr/" data-omni="click" data-omni-type="footer" data-omni-data="footer:store locator">Où acheter</a></li>
+              <li class="gb-footer__item"><a href="https://my.samsung.fr/" data-omni="click" data-omni-type="footer" data-omni-data="footer:my samsung">My Samsung</a></li>
+			</ul>
+            <ul class="gb-footer__col4">
+				<li class="gb-footer__item"><a href="/fr/offer/" data-omni="click" data-omni-type="footer" data-omni-data="footer:offers">Promotions</a></li>
+				<li class="gb-footer__item"><a href="http://shop.samsung.com/fr/" data-omni="click" data-omni-type="footer" data-omni-data="footer:shop">Shop</a></li>
+				<li class="gb-footer__item"><a href="/fr/guide-achat/" data-omni="click" data-omni-type="footer" data-omni-data="footer:purchase guide">Guide d'achat Samsung</a></li>
+				<li class="gb-footer__item"><a href="/fr/support/warranty/" data-omni="click" data-omni-type="footer" data-omni-data="footer:warranty">Garanties Particuliers</a></li>
+				<!--li class="gb-footer__item"><a href="/fr/business/warranty/ " data-omni="click" data-omni-type="footer" data-omni-data="footer:business">Garanties Professionnels</a></li-->
+				
+				<li class="gb-footer__item gb-footer__blank"><a href="/fr/shop/static/link_payment_p.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:payment methods" title="Open in a new window" target="_self">Modes de paiement</a></li>
+				
+				
+                <!--<li class="gb-footer__item"><a href="#" data-omni="click" data-omni-type="footer" data-omni-data="footer:change of mind policy">Change of Mind Policy</a></li>
+                <li class="gb-footer__item gb-footer__blank"><a href="#" target="_blank" title="Open in New Window" data-omni="click" data-omni-type="footer" data-omni-data="footer:launching people">Launching People</a></li>-->
+              <!-- [D] When the link is open in new window, add .gb-footer__blank class to li tag / title="Open in New Window" to a tag -->
+            </ul>
+          </div>
+          <div class="gb-footer__col4 s-support-link"> <strong>Contacter l'assistance</strong>
+            <ul class="gb-footer__depth2">
+              <li class="gb-footer__item"><a href="https://e-contactus.samsung.com/fr/m/webchat" onclick="window.open(this.href,'_blank','scrollbars=yes, width=700, height=800'); return false;" data-omni="click" data-omni-type="footer" data-omni-data="footer:need support_live chat support"><span class="gb-footer__svg s-ico-chat"></span>Support en Live-Chat</a></li>
+              <li class="gb-footer__item"><a href="/fr/support/erms1" onclick="window.open(this.href,'_blank','scrollbars=yes, width=700, height=800'); return false;" data-omni="click" data-omni-type="footer" data-omni-data="footer:need support_email support"><span class="gb-footer__svg s-ico-email"></span>Envoyer un e-mail </a></li>
+              <li class="gb-footer__item"><a href="/fr/info/contactus.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:need support_phone support" title="Open in a new window" target="_blank"><span class="gb-footer__svg s-ico-call"></span>Nous appeler</a></li>
+			   
+			   <li class="gb-footer__item"><a href="https://samsung.deafiline.net/connect/service/defaut " onclick="window.open(this.href,'_blank','scrollbars=yes, width=700, height=800'); return false;" data-omni="click" data-omni-type="footer" data-omni-data="footer:need support_deaf support"><span class="gb-footer__svg s-ico-contact"></span>Accessibilité</a></li>
+            </ul>
+			
+          </div>
+          <div class="gb-footer__col4 s-sns-link s-clear">
+            <div class="gb-footer__sns-list"> <strong>Rejoignez-nous sur</strong>
+              <ul class="gb-footer__depth2">
+                <li class="gb-footer__item gb-footer__svg s-facebook"><a href="https://www.facebook.com/samsungfrance" data-omni="click" data-omni-type="share" data-omni-data="follow:facebook" title="Open in a new window" target="_blank">Facebook</a></li>
+                <li class="gb-footer__item gb-footer__svg s-twitter"><a href="https://twitter.com/SamsungFR" data-omni="click" data-omni-type="share" data-omni-data="follow:twitter" title="Open in a new window" target="_blank">Twitter</a></li>
+                <li class="gb-footer__item gb-footer__svg s-instagram"><a href="https://www.instagram.com/samsungfrance/" data-omni="click" data-omni-type="share" data-omni-data="follow:instagram" title="Open in a new window" target="_blank">Instagram</a></li>
+				<li class="gb-footer__item gb-footer__svg s-gplus"><a href="https://plus.google.com/+samsungfr" data-omni="click" data-omni-type="share" data-omni-data="follow:googleplus" title="Open in a new window" target="_blank">Google Plus</a></li>
+				<li class="gb-footer__item gb-footer__svg s-youtube"><a href="https://www.youtube.com/user/SamsungMobileFrance" data-omni="click" data-omni-type="share" data-omni-data="follow:youtube" title="Open in a new window" target="_blank">YouTube</a></li>
+				<li class="gb-footer__item gb-footer__svg s-in"><a href="https://fr.linkedin.com/company/samsung-professionnels-France" data-omni="click" data-omni-type="share" data-omni-data="follow:linkedin" title="Open in a new window" target="_blank">Linked In</a></li>
+                
+                <!-- <li class="gb-footer__item gb-footer__svg s-in"><a href="https://au.linkedin.com/company/samsungaustralia" data-omni="click" data-omni-type="share" data-omni-data="follow:linked in" title="Open in a new window" target="_blank">LinkedIn</a></li> -->
+               <!-- <li class="gb-footer__item gb-footer__svg s-vk"><a href="#" data-omni="click" data-omni-type="share" data-omni-data="follow:vk" title="Open in a new window">Vk</a></li>
+                  
+                  <li class="gb-footer__item gb-footer__svg s-gplus"><a href="#" data-omni="click" data-omni-type="share" data-omni-data="follow:google+" title="Open in a new window">Google+</a></li>
+                  <li class="gb-footer__item gb-footer__svg s-blogger"><a href="#" data-omni="click" data-omni-type="share" data-omni-data="follow:bologger" title="Open in a new window">Bologger</a></li>
+                  <li class="gb-footer__item gb-footer__svg s-emailto"><a href="#" data-omni="click" data-omni-type="share" data-omni-data="follow:email" title="Open in a new window">Email</a></li>-->
+              </ul>
+            </div>
+            <!--<div class="gb-footer__local-logo">
+                  <ul>
+                    <li class="gb-footer__item"><a href="#"><img src="/common/next/img/icon-loyalwarrant.png" alt="Royal Warrant"></a></li>
+                    <li class="gb-footer__item"><a href="#"><img src="/uk/hq_wdo/nav/common/img/@local2.gif" width="79" height="38" alt=""></a></li>
+                    <li class="gb-footer__item"><a href="#"><img src="/uk/hq_wdo/nav/common/img/@local3.gif" width="67" height="38" alt=""></a></li>
+                  </ul>
+                </div>-->
+          </div>
+        </div>
+        <div class="gb-footer__copyright">
+          <p class="gb-footer__text">Copyright© 1995-2016 SAMSUNG. Tous droits réservés.</p>
+		  <br>
+		   <p>*Bienvenue dans votre nouvelle maison</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gb-footer__bottom">
+    <div class="gb-footer__inner">
+      <div class="gb-footer__container">
+        <div class="gb-footer__bottom-list">
+          <ul class="gb-footer__list">
+            <li class="gb-footer__item"><a href="/fr/estore/static/link_terms_and_conditions_of_sale.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_terms and condition">CGV</a></li>
+            <li class="gb-footer__item"><a href="/fr/info/privacy.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_privacy">Données personnelles </a></li>
+            <li class="gb-footer__item"><a href="/fr/info/legal.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_legal">Conditions d'utilisation</a></li>
+            <!-- <li class="gb-footer__item"><a href="/fr/info/sitemap.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_sitemap">Plan du site</a></li> -->
+            <li class="gb-footer__item"><a href="/fr/accessibility/" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_accessilbility help">Aide à l'accessibilité</a></li>
+			<li class="gb-footer__item"><a href="/fr/info/mentions_legales.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_legal notice">Mentions légales</a></li>
+            <!-- <li class="gb-footer__item"><a href="/au/estore/static/link_terms_and_conditions_of_sale.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_terms&amp;conditionsofsale">Terms &amp; Conditions of Sale</a></li> -->
+          </ul>
+          <div class="gb-footer__lang">
+            <!-- local flag -->
+            <a class="gb-footer__link" href="/fr/function/ipredirection/ipredirectionLocalList.html" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_locallist"><span class="gb-footer__flag flag-fr"></span>France / Francais</a> </div>
+        </div>
+        <div class="gb-footer__local_foot_address">
+          <p> <!-- ABN 63 002 915 648<br /><br /> -->
+          Ce site est optimisé pour Internet Explorer 9, Chrome, Safari ainsi que pour les navigateurs plus récents.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!--googleon: all-->
+        </footer>
+
+
+<!-- BEGIN: static_footer_bottom_last.html -->
+	<!-- BEGIN: static_footer_bottom_last.html -->
+
+	<script src="../../../../common/next/js/src/pages/auth.js"></script>
+	<script src="../../../estore/resources/nextGenMiniCart.js"></script>
+    <!-- javascript --> 
+	<script src="../../../../common/js/dist/vendor.min.js"></script>
+    <!-- Omniture Javascript --> 	
+	<script src="../../../../common/js/omni/s_code_next.js"></script>	
+    <!-- //Omniture Javascript --> 
+	<script src="../../../../common/js/dist/smg.global.min.js"></script>
+	<script src="../../../../common/js/dist/smg.module.min.js"></script>
+    <!-- Opinion Lab :: 15.09.14 Include these files just before the close body </body> tag -->  
+    
+    <!-- MAIN OL STYLESHEET JS -->  
+    <script language="javascript" type="text/javascript" charset="windows-1252" src="../../../../common/js/onlineopinionV5/oo_style.js"></script>  
+    <!-- MAIN OL ENGINE MINI-->  
+    <script language="javascript" type="text/javascript" charset="windows-1252" src="../../../../common/js/onlineopinionV5/oo_engine.min.js"></script>  
+    <!-- MAIN OL ENGINE -->  
+    <!-- FEEDBACK CONFIGURATION -->  
+    <script language="javascript" type="text/javascript" charset="windows-1252" src="../../../../common/js/onlineopinionV5/oo_conf_tab.js"></script>  
+    <!-- END: OnlineOpinion v5+ -->  
+
+    <script>  
+    //opinion lab title - dong_won.lee  
+    window.onload = function(){  
+        if($('#oo_tab').attr('class') != undefined){  
+            $('#oo_tab').attr('title','open in new windows');  
+            $('.screen_reader').text('Activate to launch comment card')  
+        }  
+    }  
+	
+    </script>                          
+<!-- END: static_footer_bottom_last.html -->

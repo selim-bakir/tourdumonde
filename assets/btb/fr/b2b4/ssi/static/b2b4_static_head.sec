@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" class="ltr">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<!-- minimal-ui attribute is for iOS7.2 if we notice with eyebrow bars remove -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr">
+
+		<link rel="stylesheet" type="text/css" media="all" href="assets_css/samsung_1.css">
+
+		<script src="assets_js/samsung.jquery.js"></script>
+		<script src="assets_js/samsung.util.js"></script>
+		<script src="assets_js/samsung.ui.js"></script>
+		<script src="assets_js/samsung.common.js"></script>
+
+		<script type="text/javascript" src="assets_js/b2b4-notice.js"></script>
+		<script type="text/javascript" src="assets_js/b2b4_partnerportal.js"></script>
+		<script type="text/javascript" src="assets_js/b2b4-mail.js"></script>
+		<script type="text/javascript" src="assets_js/b2b4-mail-step2-contact-us.js"></script>
+		<script type="text/javascript" src="assets_js/b2b4-mybusiness.js"></script>
+		<!-- <script type="text/javascript" src="/common/b2b4/js/src/pages/b2b4-eloqua-tracking.js"></script> -->
+		<script type="text/javascript" src="assets_js/b2b4-eloqua-tracking.js"></script>
+
+
+	<!-- favicon  -->
+	<link rel="shortcut icon" href="assets_img/favicon.ico">
+	<link rel="apple-touch-icon" href="assets_img/app_ico.gif">
+
+	<!-- css,js link by local -->
+	<link rel="stylesheet" type="text/css" media="all" href="assets_css/samsung.css">
+
+	<script>
+		/* site code */
+		var SITE_CD = "fr";
+	</script>
+	<!-- //css,js link by local --></head></html>

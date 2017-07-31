@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR" itemscope="" itemtype="http://schema.org/WebPage">
+    <head>
+
+
+        <title>blog | Samsung FR</title>
+        <meta name="title" content="blog | Samsung FR">
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+        <link rel="canonical" href="http://www.samsung.com/fr/tvs/qled/q_blog/">
+
+
+        <meta name="keywords" content="keyword">
+        <meta name="description" content="description">
+        <meta name="date" content="2017-03-22"><!--Latest Publishing Date -->
+        <meta name="sitecode" content="fr">
+
+        <meta name="twitter:card" content="Summary">
+        <meta name="twitter:site" content="@SamsungFR">
+        <meta name="twitter:creator" content="@SamsungFR">
+        <meta name="twitter:url" content="http://www.samsung.com/fr/tvs/qled/q_blog/">
+        <meta name="twitter:title" content="blog">
+        <meta name="twitter:description" content="description">
+        <meta name='twitter:image' content="http://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png" />
+
+        <meta property="og:url" content="http://www.samsung.com/fr/tvs/qled/q_blog/">
+        <meta property="og:image" content="http://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Samsung fr">
+        <meta property="og:locale" content="fr-FR">
+        <meta property="og:title" content="blog"/>
+        <meta property="og:description" content="description"/>
+        <meta property="og:country-name" content="fr"/>
+
+        <meta itemprop="name" content="Samsung fr">
+        <meta itemprop="image" content="http://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png">
+        <meta itemprop="url" content="http://www.samsung.com/fr/tvs/qled/q_blog/">
+        <meta itemprop="description" content="description">
+        <meta itemprop="keywords" content="keyword">
+
+        <link rel="shortcut icon" href="/etc/designs/smg/global/imgs/favicon.ico">
+        <link rel="apple-touch-icon" href="/etc/designs/smg/global/imgs/app_ico.gif">
+
+
+
+
+        <link rel="stylesheet" href="/etc/designs/smg/global/templates/page.css" type="text/css"/>
+
+
+
+
+
+
+
+
+
+        <link rel="stylesheet" href="/etc/designs/smg/fr/css/fr.css" type="text/css">
+        <!--[if lt IE 9]>
+            <script src="/etc/designs/smg/global/ie9/html5.js"></script>
+        <![endif]-->
+
+<script type="text/javascript">
+/* DataLayer for Samsung - Last Modified Date 2016-07-13 by Kim myounggyu */
+var siteCode = "";
+var pageURL = "";
+
+siteCode = window.location.href.split("/")[3];
+pageURL = window.location.href;
+
+var digitalData = {
+		"page" : {
+			"pageInfo" : {
+				"siteCode" : siteCode,
+                "siteSection": "", //pathIndicator정보 이용하여 설정
+				"pageName" : "", //pathIndicator정보 이용하여 설정
+				"pageURL" : pageURL,
+				"pageTrack" : "" //All page(server-side)
+				},
+			"pathIndicator" : { //product page(server-side)
+				"depth_2" : "",
+				"depth_3" : "",
+				"depth_4" : "",
+				"depth_5" : ""
+				}
+		},
+		"user" : {
+			"loginStatus" : ""
+			},
+		"product" : {
+			"category" : "", // pathIndicator depth정보 이용하여 설정
+			"model_code" : "", // PD class정보 이용하여 설정
+			"model_name" : "", // PD page(server-side)
+			"displayName" : "", // PD class정보 이용하여 설정
+			"pvi_type_code" : "", //PD page(server-side)
+			"pvi_type_name" : "", //PD page(server-side)
+			"pvi_subtype_code" : "", //PD page(server-side)
+			"pvi_subtype_name" : "" //PD page(server-side)
+			}
+}
+
+//server-side
+digitalData.page.pageInfo.pageTrack = "page-track";
+
+// depth Info.
+var depth = window.location.href.split("/").length;
+var depth_last = window.location.href.split("/")[depth-1];
+if(depth_last =="" || depth_last.charAt(0)=="?"){
+    depth -= 1;
+}
+
+// set site section value
+if((digitalData.page.pathIndicator.depth_2 != "")||(digitalData.page.pageInfo.pageTrack == "flagship pdp")){
+    digitalData.page.pageInfo.siteSection = siteCode + ":consumer"; //product page
+}else if(depth == 4){
+    digitalData.page.pageInfo.siteSection = siteCode + ":home"; //home
+}else{
+     digitalData.page.pageInfo.siteSection = siteCode + ":" + window.location.href.split("/")[4];
+}
+
+// set product category value
+if(digitalData.page.pathIndicator.depth_3 != ""){
+    digitalData.product.category = digitalData.page.pathIndicator.depth_3;
+}
+
+// set pathIndicator(not product page)
+if(digitalData.page.pathIndicator.depth_2 == ""){
+    if(depth >= 5) digitalData.page.pathIndicator.depth_2 = window.location.href.split("/")[4]
+    if(depth >= 6) digitalData.page.pathIndicator.depth_3 = window.location.href.split("/")[5]
+    if(depth >= 7) digitalData.page.pathIndicator.depth_4 = window.location.href.split("/")[6]
+    if(depth >= 8) digitalData.page.pathIndicator.depth_5 = window.location.href.split("/")[7]
+}
+
+// set pageName
+var pageName = siteCode;
+if(digitalData.page.pathIndicator.depth_2 != "")
+    pageName += ":" + digitalData.page.pathIndicator.depth_2;
+if(digitalData.page.pathIndicator.depth_3 != "")
+    pageName += ":" + digitalData.page.pathIndicator.depth_3;
+if(digitalData.page.pathIndicator.depth_4 != "")
+    pageName += ":" + digitalData.page.pathIndicator.depth_4;
+if(digitalData.page.pathIndicator.depth_5 != "")
+    pageName += ":" + digitalData.page.pathIndicator.depth_5;
+
+// check PD, GPD
+var pageTrackName = digitalData.page.pageInfo.pageTrack;
+if(pageTrackName == "product detail" || pageTrackName == "generic product details"){
+	var modelCode = document.getElementsByClassName("product-details__s-sku")[0].innerHTML;
+	var displayName = document.getElementsByClassName("product-details__title")[0].innerHTML.replace(/(<([^>]+)>)/gi, "");
+	digitalData.product.model_code = modelCode;
+	digitalData.product.displayName = displayName;
+    pageName += ":" + modelCode;
+}
+digitalData.page.pageInfo.pageName = pageName;
+
+</script>
+
+
+        <script src="//assets.adobedtm.com/2f39014c5d5172df150d19eb00fe42ddba079437/satelliteLib-a86efce84c62eb422943e974e9b5630f3dc04e8d-staging.js"></script>
+    </head>
+    <body>
+
+        <div id="wrap">
+
+<header id="header" role="banner">
+    <div class="s-skip-content">
+        <a href="#content" id="skipToContent">Skip to content</a>    </div>
+  <div class="cookie-notice" role="status" style="display: none;">
+        <p class="cookie-notice__desc">Ce site utilise des cookies. En continuant à utiliser notre site, vous consentez à l'utilisation des cookies.</p>
+        <a href="/fr/info/privacy/" class="cookie-notice__link">Vous pouvez en savoir plus ici</a>
+        <button type="button" class="cookie-notice__btn-close">Fermer</button>
+    </div>
+    <div class="parsys ipar iparsys"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys ipar iparsys"><div class="cm-g-static-content section">
+
+<style>
+
+.gb-gnb__promotion{display:none;position:relative;background-color:#efefef;border-bottom:1px solid #dadada}
+.gb-gnb__promotion.cookie-promotion{display:block}
+.gb-gnb__promotion-inner01 {
+    position: relative;
+    padding: 10px 0 8px;
+    max-width: 1254px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gb-gnb__promotion-desc {
+	display: inline-block;
+    margin-left: 13px;
+    padding-left: 18px;
+	border-left : 1px solid #dadada;
+    font-weight: bold;
+    font-size: 14px;
+    color: #363636;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.gb-gnb__promotion-desc:first-child {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.gb-gnb__promotion-link:hover {
+    color: #1428a0;
+}
+.gb-gnb__promotion-link {
+    display: inline-block;
+    margin-left: 18px;
+    font-size: 12px;
+    color: #1428a0;
+    font-family: 'SamsungOne',arial !important;
+}
+
+.gb-gnb__promotion .s-svg:after {position:relative;top:0;left:0;display:block;background-repeat:no-repeat;color:transparent;content:'.'}
+
+.gb-gnb__promotion .s-arw-right {
+    display: inline-block;
+    position: relative;
+    margin-top: -2px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.gb-gnb__promotion .s-arw-right:after {
+    width: 7px;
+    height: 11px;
+    background-image: url(/etc/designs/smg/global/imgs/arw-right-blue.png);
+}
+.gb-gnb__promotion .s-svg.s-ico-close {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    padding: 10px;}
+
+.gb-gnb__promotion .s-svg.s-ico-close:after {width: 12px;height: 12px;background-image: url(/etc/designs/smg/global/imgs/ico-close.png);}
+
+
+@media screen and (max-width: 768px){
+
+
+  .gb-gnb__promotion-inner01 {
+    padding: 6px 24px 5px;
+  }
+
+  .gb-gnb__promotion-desc {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+.gb-gnb__promotion-link {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+.gb-gnb__promotion .s-arw-right  {
+    width: 5px;
+    height: 8px;
+}
+.gb-gnb__promotion .s-svg.s-ico-close  {
+    top: 0;
+    right: 0;
+    padding: 10px 8px;
+}
+.gb-gnb__promotion .s-svg.s-ico-close:after {
+    width: 8px;
+    height: 8px;
+    background-size: 8px 17px;
+}
+}
+
+
+</style>
+
+<!-- div class="gb-gnb__promotion cookie-promotion" style="background-color:#efefef"> -->
+<!--googleoff: all-->
+        <!-- div class="gb-gnb__promotion-inner01">
+			<p class="gb-gnb__promotion-desc">NOTRE ENGAGEMENT QUALITÉ<a href="http://www.samsung.com/fr/quality-assurance/" class="gb-gnb__promotion-link" data-omni="click" data-omni-type="gnb" data-omni-data="gnb_top promo:Note7 recall"> EN SAVOIR PLUS<span class="s-svg s-arw-right"></span></a></p>
+			-->
+            <!--
+			<p class="gb-gnb__promotion-desc">NOUVELLE INFORMATION À PROPOS DU GALAXY NOTE7<a href="/fr/note7exchange/" class="gb-gnb__promotion-link" data-omni="click" data-omni-type="gnb" data-omni-data="gnb_top promo:Note7 recall">En savoir plus<span class="s-svg s-arw-right"></span></a></p>
+			-->
+            <!--
+			<button type="button" class="s-svg s-ico-close"><span class="blind">Close</span></button>
+		</div>
+		-->
+<!--googleon: all-->
+<!-- </div> -->
+
+<script>
+;(function(win,doc,callback){'use strict';callback=callback||function(){};function detach(){if(doc.addEventListener){doc.removeEventListener('DOMContentLoaded',completed);}else{doc.detachEvent('onreadystatechange',completed);}}function completed(){if(doc.addEventListener||event.type==='load'||doc.readyState==='complete'){detach();callback(window,window.jQuery);}}function init(){if (doc.addEventListener){doc.addEventListener('DOMContentLoaded',completed);}else{doc.attachEvent('onreadystatechange',completed);}}init();})(window,document,function(win,$){
+	$(window).on('load', function(){
+$('.gb-gnb__promotion .s-ico-close').on('click', function() {
+$('.gb-gnb__promotion').css('display', 'none');
+  });
+});
+});
+</script>
+
+</div>
+</div>
+</div>
+</div>
+
+    <div class="cm-g-gnb gnb"><nav class="gb-gnb" role="navigation">
+	<!--googleoff: all-->
+
+	<div class="gb-gnb__dimmed" style="display: none"></div>
+
+	<div class="gb-gnb__bar">
+		<div class="gb-gnb__bar-inner">
+
+			<a href="/fr/" class="s-svg gb-gnb__logo"><span class="blind">Samsung</span></a>
+
+			<button type="button" class="s-svg s-gnb-toggler"><span class="blind">Open the Menu</span></button>
+
+
+			<ul class="gb-gnb__main" role="tablist"></ul>
+
+
+
+
+			<div class="gb-gnb__drop-mobile drilldown" style="min-height: 575px">
+				<div class="gb-gnb__drop-mobile-wrap drilldown-container">
+					<div class="drilldown-root">
+						<ul class="s-depth1-wrap" id="mobile_left"></ul>
+						<ul class="s-depth1-wrap" id="mobile_right">
+							<li>
+
+								<a href="https://account.samsung.com/mobile/account/check.do" class="s-login s-signin s-ico-login" data-omni="login">Connexion</a>
+
+							</li>
+							<li>
+
+								<a href="#" class="s-mymenu" style="display: none">
+									<span class="s-svg s-ico-login"></span><span class="s-mymenu-name"></span>
+									<span class="s-svg s-arw-right"></span>
+								</a>
+								<div class="drilldown-sub">
+									<div class="drilldown-back">
+										<a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Retour au menu supérieur</span></a>
+									</div>
+									<ul>
+										<li class="s-depth2-wrap">
+											<a href="#" class="s-mymenu">
+												<span class="s-svg s-ico-login"></span><span class="s-mymenu-name"></span>
+											</a>
+											<ul>
+												<li>
+													<a href="https://shop.samsung.com/fr/track-order" class="s-depth3-link loginmenu" data-omni="orders">Commandes</a>
+												</li>
+												<li>
+													<a href="https://shop.samsung.com/fr/my-account/profile" class="s-depth3-link loginmenu" data-omni="my account">Mon compte</a>
+												</li>
+												<li><a href="#" class="s-depth3-link logoutBtn loginmenu" data-omni="logout">Déconnexion</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+			<button type="button" class="s-svg s-ico-close js-mo-close"><span class="blind">Close the Menu</span></button>
+
+			<div class="gb-gnb__sub">
+				<ul class="gb-gnb__sub-nav" role="tablist"></ul>
+
+				<ul class="gb-gnb__utility">
+					<li class="s-login">
+
+						<a href="https://account.samsung.com/mobile/account/check.do" class="s-btn-login" data-omni="login">Connexion<span class="s-svg s-arw-right"></span></a>
+					</li>
+					<li class="s-mymenu" style="display: none">
+
+						<button type="button" title="Mon menu" class="s-btn-utility" aria-expanded="false">
+							<span class="s-svg s-ico-login"><span class="blind">Ouvrir Mon menu</span></span>
+						</button>
+
+						<ul class="gb-gnb__my-layer">
+							<li>
+								<span class="s-mymenu-name"></span>
+							</li>
+							<li>
+								<a href="https://shop.samsung.com/fr/track-order" data-omni="orders">Commandes</a>
+							</li>
+							<li>
+								<a href="https://shop.samsung.com/fr/my-account/profile" data-omni="my account">Mon compte</a>
+							</li>
+							<li><a href="#" class="logoutBtn" data-omni="logout">Déconnexion</a></li>
+						</ul>
+
+					</li>
+					<li>
+
+						<button type="button" class="s-btn-utility js-ico-search" title="Rechercher" aria-expanded="false" data-omni="search"><span class="s-svg s-ico-search"><span class="blind">Ouvrir la fenêtre de recherche</span></span><span class="s-search-arrow"></span></button>
+
+						<div class="gb-gnb__search">
+							<div class="gb-gnb__search-inner">
+								<div class="gb-gnb__search-bar">
+									<div class="gb-gnb__search-input-wrap">
+										<label for="inp_srch" class="blind">Saisir un mot-clé de recherche</label>
+										<input type="text" id="inp_srch" name="gnb_search" class="gb-gnb__search-input" placeholder="Galaxy S7" autocomplete="off">
+										<button type="submit" class="s-svg s-ico-search"><span class="blind">Rechercher</span></button>
+
+										<button type="button" class="s-svg s-ico-close"><span class="blind">Fermer la fenêtre de recherche</span></button>
+									</div>
+									<div class="gb-gnb__search-history" style="display: ">
+										<div class="gb-gnb__search-history-title">Historique des recherches</div>
+										<ul></ul>
+										<button type="button" class="gb-gnb__search-history-close">EFFACER L&#39;HISTORIQUE</button>
+									</div>
+								</div>
+								<div class="gb-gnb__search-suggest">
+									<div class="gb-gnb__search-suggest-inner">
+
+										<div class="gb-gnb__search-typeahead" style="display: none">
+											<div class="gb-gnb__search-typeahead-title"></div>
+											<ul></ul>
+										</div>
+
+
+										<p class="gb-gnb__search-suggest-nodata" style="display: ">Aucune suggestion</p>
+
+										<div class="gb-gnb__search-suggest-list" style="display: none"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<!-- Cart Icon -->
+					<li>
+						<a href="https://shop.samsung.com/fr/cart" title="Panier" class="s-btn-utility js-empty-cart" aria-haspopup="true" data-omni="cart">
+							<span class="s-svg s-ico-cart-empty">
+								<span class="blind">Panier ouvert</span>
+								<span class="s-cart-number" id="globalCartCount-empty" style="display: none"><span class="blind">Nombre de produits : </span>0</span>
+							</span>
+						</a>
+
+						<a href="https://shop.samsung.com/fr/cart" title="Panier" class="s-btn-utility js-cart" aria-haspopup="true" data-omni="cart" style="display: none">
+							<span class="s-svg s-ico-cart">
+								<span class="blind">Panier ouvert</span>
+								<span class="s-cart-number" id="globalCartCount" style="display: none"><span class="blind">Nombre de produits : </span>0</span>
+							</span>
+						</a>
+
+					</li>
+				</ul>
+				<!-- 회원로그인 폼 (한글) -->
+				<form id="loginForm" name="loginForm" method="post" action="https://account.samsung.com/account/check.do">
+					<input type="hidden" name="actionID" value="StartAP">
+					<input type="hidden" name="serviceID" value="h1j775k21q">
+					<input type="hidden" name="serviceName" value="SAMSUNG">
+					<input type="hidden" name="domain" value="">
+					<input type="hidden" name="countryCode" value="FR">
+					<input type="hidden" name="languageCode" value="fr">
+					<input type="hidden" name="registURL" id="registURL" value="/aemapi/data-login/afterLogin.fr.json">
+					<input type="hidden" name="returnURL" id="returnURL">
+					<input type="hidden" name="goBackURL" id="goBackURL" value="">
+					<input type="hidden" name="ssoType" value="OPT_VAL">
+					<input type="hidden" name="svcIptLgnID" id="userId" value="">
+					<input type="hidden" name="svcIptLgnPD" id="userPass" value="">
+					<input type="hidden" name="emailActivationURL" id="emailActivationURL" value="/aemapi/data-login/emailActivationURL.fr.json">
+				</form>
+				<!-- 회원가입 폼 -->
+				<form id="joinForm" name="joinForm" method="post" action="https://account.samsung.com/account/check.do">
+					<input type="hidden" name="actionID" value="SignupAP">
+					<input type="hidden" name="serviceID" value="h1j775k21q">
+					<input type="hidden" name="serviceName" value="SAMSUNG">
+					<input type="hidden" name="domain" value="">
+					<input type="hidden" name="countryCode" value="FR">
+					<input type="hidden" name="languageCode" value="fr">
+					<input type="hidden" name="registURL" id="joinRegistURL" value="/aemapi/data-login/afterLogin.fr.json">
+					<input type="hidden" name="returnURL" id="joinReturnURL">
+					<input type="hidden" name="goBackURL" id="joinGoBackURL" value="">
+					<input type="hidden" name="ssoType" value="OPT_VAL">
+					<input type="hidden" name="emailActivationURL" id="joinEmailActivationURL" value="/aemapi/data-login/emailActivationURL.fr.json">
+				</form>
+				<!-- Find Email 폼 -->
+				<form id="findAccountForm" name="findAccountForm" method="post" action="https://account.samsung.com/account/check.do">
+					<input type="hidden" name="actionID" value="FindEmail">
+					<input type="hidden" name="serviceID" value="h1j775k21q">
+					<input type="hidden" name="serviceName" value="SAMSUNG">
+					<input type="hidden" name="domain" value="">
+					<input type="hidden" name="countryCode" value="FR">
+					<input type="hidden" name="languageCode" value="fr">
+					<input type="hidden" name="goBackURL" id="findGoBackURL" value="">
+					<input type="hidden" name="ssoType" value="OPT_VAL">
+				</form>
+
+				<form id="textForm" name="textForm">
+					<input type="hidden" name="signBtnText1" id="signBtnText1" value="signBtnText1"/>
+					<input type="hidden" name="signBtnText2" id="signBtnText2" value="signBtnText2"/>
+					<input type="hidden" name="errorTitleText" id="errorTitleText" value="errorTitleText"/>
+					<input type="hidden" name="errorText1" id="errorText1" value="errorText1"/>
+					<input type="hidden" name="errorText2" id="errorText2" value="errorText2"/>
+					<input type="hidden" name="errorText3" id="errorText3" value="errorText3"/>
+					<input type="hidden" name="errorText4" id="errorText4" value="errorText4"/>
+					<input type="hidden" name="wishText" id="errorText4" value="Le produit a été ajouté à votre liste de souhaits."/>
+					<input type="hidden" name="badReqTest" id="errorText4" value="Requête incorrecte. Une partie ou l&#39;ensemble des données fournies n&#39;est pas valide. Veuillez contacter le centre VoC."/>
+					<input type="hidden" name="productCountText" id="productCountText" value="Nombre de produits"/>
+				</form>
+
+					<input type="hidden" name="searchPath" id="searchPath" value="/fr/search.html"/>
+
+				<input type="hidden" name="domain" id="domain" value="www.samsung.com"/>
+				<input type="hidden" name="siteCode" id="siteCode" value="fr"/>
+				<input type="hidden" name="useLogin" id="useLogin" value="Y"/>
+				<input type="hidden" name="useStore" id="useStore" value="Y"/>
+				<input type="hidden" name="storeDomain" id="storeDomain" value="https://shop.samsung.com"/>
+				<input type="hidden" name="hiddenSearch" id="hiddenSearch" value="Galaxy S7"/>
+				<input type="hidden" name="loginURL" id="loginURL" value="/fr/login.html"/>
+				<input type="hidden" name="loginLinkURL" id="loginLinkURL" value="https://account.samsung.com/mobile/account/check.do"/>
+				<input type="hidden" name="updateProfileURL" id="updateProfileURL" value="/fr/my-account/profile"/>
+
+				<!-- No Access Layer Popup -->
+				<div class="layer_popup" id="confirmPopup" style="display:none;">
+					<div id="popup-type02" class="popAlign">
+						<div class="popup_wrap">
+							<h2 class="pop-tit"></h2>
+							<p class="msg-text tc"></p>
+							<div class="pop-btn">
+								<a href="javascript:void(0)" class="button login-leave-btn" title="Aucun accès OK">OK</a>
+							</div>
+							<button class="close-button icon-close-x login-leave-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Aucun accès Fermer</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- 장바구니 가득찬 경우 Layer Popup -->
+				<div class="layer_popup" style="display:none;">
+					<div id="gloval_message_popup" class="popup-nextgen-type popAlign">
+						<div class="popup_wrap">
+							<p class="msg-text tc">Désolé, le contenu de votre panier excède nos stocks.</p>
+							<div class="pop-btn">
+								<a href="#" class="button">OK</a>
+							</div>
+							<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Fermer la fenêtre pop-up</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- 장바구니 삭제버튼 클릭 시 Layer -->
+				<div class="layer_popup" style="display: none;">
+					<div id="popup_delete_product_cart" class="popup-nextgen-type popAlign">
+						<div class="popup_wrap">
+							<p class="pop-tit">Retirer un produit</p>
+							<p class="msg-text">Sans ce produit, la promotion ou le bon de réduction ne peut pas être appliqué.<br>Êtes-vous sûr de vouloir retirer ce produit ?</p>
+							<div class="pop-btn">
+								<a style="display: inline-block;" href="#" class="button" id="btnMoveToWishList" onclick="javascript: removeConfirmButton('Y');">Aller à la liste de souhaits</a>
+								<a href="#" class="button gray" onclick="javascript: removeConfirmButton('N');">Supprimer</a>
+							</div>
+							<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Fermer la fenêtre pop-up</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="layer_popup" style="display: none;">
+					<div id="popup_alert" class="popup-nextgen-type popAlign" tabindex="0" data-focus-id="shop-popover-wrap" data-tab-previous="shop-popover-close">
+						<div class="popup_wrap">
+							<p class="msg-text tc"></p>
+							<div class="pop-btn">
+								<a href="javascript:void(0);" class="button alert-ok-button" data-popup="close">OK</a>
+							</div>
+							<button class="close-button icon-close-x" data-focus-id="shop-popover-close" data-tab-next="shop-popover-wrap" data-popup="close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Fermer la fenêtre pop-up</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- 정책동의 1단계 Layer -->
+				<div class="layer_popup" id="privacyPopup" style="display: none;">
+					<div id="popup_privacy" class="popAlign">
+						<form action="#" method="post" name="" id="">
+							<fieldset>
+								<legend>Privacy Policy</legend>
+								<div class="popup_wrap">
+									<div class="popup_title">Privacy Policy</div>
+									<div class="popup_cont">
+										<div class="privacy_wrap">
+											<div class="check_box">
+												<input type="checkbox" name="privacy-terms" id="privacy-terms">
+												<label for="privacy-terms" class="check_text">
+													J'ai lu et j'accepte la <a href='/fr/info/privacy.html' target='_blank' class='privacy_link'>Politique de confidentialité</a> de Samsung.com
+												</label>
+												<!-- ERROR : Clicked PROCEED TO STORE button : display:block -->
+												<p class="check_error" id="errorPrivacy" style="display: none;">Cochez cette case pour vous rendre sur Samsung.com.</p>
+												<!-- //ERROR : Clicked PROCEED TO STORE button -->
+											</div>
+											<div class="check_box">
+												<input type="checkbox" name="privacy-terms2" id="privacy-terms2">
+												<label for="privacy-terms2" class="check_text">En cochant cette case, j'accepte les mises à jour de service de Samsung, notamment : </label><p class="check_txt">les informations de marketing et de Services de Samsung.com, les annonces de nouveaux produits et services, ainsi que les offres spéciales, les événements et les bulletins d'information.</p>
+											</div>
+											<div class="privacy_btn">
+												<a href="javascript:void(0)" class="button" id="privacyBtn">CONTINUER SUR SAMSUNG.COM</a>
+												<a href="javascript:void(0)" class="button login-leave-btn">QUITTER LA PAGE</a>
+											</div>
+										</div>
+									</div>
+									<button class="close-button icon-close-x login-leave-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+										<span class="blind">Fermer la Politique de confidentialité</span>
+									</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+
+				<!-- 정책동의 2단계 Layer -->
+				<div class="layer_popup" id="preferencePopup" style="display: none;">
+					<div id="popup-type04" class="popAlign">
+						<div class="popup_wrap">
+							<p class="pop-tit">Vérifier les préférences</p>
+							<p class="msg-text">Aidez-nous à vous faire des recommandations pertinentes en mettant à jour vos préférences sur les produits.</p>
+							<div class="pop-btn">
+								<a href="javascript:void(0)" class="button" id="preferenceCheckBtn" title="Accéder à la page de vérification des préférences">OUI</a>
+								<a href="javascript:void(0)" class="button login-close-btn" id="privacyCloseBtn" title="Vérifiez les préférences plus tard">PLUS TARD</a>
+							</div>
+							<button class="close-button icon-close-x login-close-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">Fermer la page de vérification des préférences</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Black Background Area -->
+				<div id="dimContainer">
+					<div class="lightbox-skrim" style="display:none"></div>
+				</div>
+		</div>
+		</div>
+	</div>
+	<!--googleon: all-->
+</nav>
+
+
+<div class="gb-gnb__cart-empty" role="dialog" style="display: none;">
+	<p class="gb-gnb__cart-empty-desc">Votre panier est vide.</p>
+<!--<a href="#" class="gb-gnb__cart-empty-link">Continue shopping Continue shopping Continue shopping</a> -->
+	<a href="#" class="gb-gnb__cart-empty-link js-cart-close">OK</a><!-- close type -->
+	<button type="button" class="gb-gnb__cart-empty-close js-cart-close"><span class="blind">Fermer la fenêtre pop-up</span></button>
+</div>
+
+
+<div class="cm-custom-popup js-custom-pop" role="dialog" style="display: none">
+    <div class="cm-custom-popup__inner">
+        <div class="cm-custom-popup__popup-area" style="max-width: 414px;">
+
+            <div class="cm-custom-popup__custom-area">
+            </div>
+            <div class="cm-custom-popup__checkbox-wrap">
+                <input type="checkbox" id="_nomore_shop_terms" class="cm-custom-popup__checkbox-input">
+                <label for="_nomore_shop_terms" class="cm-custom-popup__checkbox-label">Ne plus afficher</label>
+            </div>
+
+            <div class="cm-custom-popup__link-wrap">
+                <a href="#" class="cm-custom-popup__link" target="_blank" title="Ouvrir dans une nouvelle fenêtre">OK</a>
+            </div>
+            <button type="button" class="cm-custom-popup__close js-custom-pop-close"><span>Fermer la fenêtre pop-up</span></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="s-layer-dimmed" style="display: none;"></div></div>
+
+    <input type="hidden" name="typeAheadDomain" id="typeAheadDomain" value="//searchapi.samsung.com/search/" />
+    <input type="hidden" name="scene7domain" id="scene7domain" value="http://stg-images.samsung.com/is/image/samsung/" />
+    <input type="hidden" name="reviewUseYN" id="reviewUseYN" value="Y"/>
+    <input type="hidden" name="reevooUseYN" id="reevooUseYN" value="N"/>
+    <input type="hidden" name="frontApiStageInfo" id="frontApiStageInfo" value="qa"/>
+    <input type="hidden" name="gnbRunmodeInfo" id="gnbRunmodeInfo" value="qa"/>
+</header>
+
+
+
+        <div id="content" role="main">
+	         <!-- include the parsys component -->
+             <div class="par parsys">
+

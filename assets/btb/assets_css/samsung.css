@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+/* pcp Windows 10 Banner in KV */
+.link_w10_pcp{display:block;width:180px;height:27px;margin-top:8px; background:url('../assets_img/Windows10_MDA_Tag_WE_FR_White_180x29.png') no-repeat;font-size:0;}
